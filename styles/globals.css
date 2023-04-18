@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "InterRegular";
+  src: url("../public/Assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("../public/Assets/fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "InterBlack";
+  src: url("../public/Assets/fonts/Inter-Black.ttf");
+}
+@font-face {
+  font-family: "InterExtraBold";
+  src: url("../public/Assets/fonts/Inter-ExtraBold.ttf");
+}
+
+body {
+  @apply bg-black text-white;
+}
