@@ -1,0 +1,9 @@
+.nav-links {
+  @apply flex w-132 justify-between;
+}
+.nav-links li {
+  @apply text-white font-InterExtraBold text-4xl hover:scale-110 transition ease-out duration-300;
+}
+.cta {
+  @apply px-14 py-6 text-black bg-white rounded-full font-InterExtraBold text-3xl hover:scale-95 transition ease-out duration-300;
+}
