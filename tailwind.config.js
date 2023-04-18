@@ -35,7 +35,11 @@ module.exports = {
       borderWidth: {},
       boxShadow: {},
       borderRadius: {},
-      fontSize: {},
+      fontSize: {
+        "2.5xl": "2.06rem",
+        "5.5xl": "3.25rem",
+        "7.5xl": "5.75rem",
+      },
       lineHeight: {},
       width: {
         fit: "fit-content",
@@ -126,6 +130,9 @@ module.exports = {
         166: "41.5rem",
         172: "43rem",
         184: "46rem",
+        186: "47rem",
+        188: "48rem",
+        192: "52rem",
       },
       colors: {
         main: {
@@ -141,7 +148,10 @@ module.exports = {
         "size-y-full": "auto 100%",
       },
       fontFamily: {
-        FontBase: "FontBase",
+        InterBold: "InterBold",
+        InterExtraBold: "InterExtraBold",
+        InterRegular: "InterRegular",
+        InterBlack: "InterBlack",
       },
       animation: {},
       keyframes: {},
