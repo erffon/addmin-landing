@@ -1,0 +1,9 @@
+.tagline-span {
+  @apply text-main-orange font-InterExtraBold text-8xl;
+}
+.tagline {
+  @apply font-InterExtraBold text-8xl leading-10;
+}
+.hero-cta {
+  @apply font-InterExtraBold text-2.5xl bg-main-orange rounded-full py-10 px-16 hover:scale-95 transition ease-out duration-300;
+}
