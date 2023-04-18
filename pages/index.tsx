@@ -62,6 +62,7 @@ export default function Home() {
                 alt="addmin logo and toggle button"
               />
             </div>
+            {/* text animation  */}
             <p className="font-InterExtraBold text-7.5xl">
               <span>Don’t share your</span>{" "}
               <TypeAnimation
