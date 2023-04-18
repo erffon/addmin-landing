@@ -74,13 +74,74 @@ export default function Home() {
           </div>
         </div>
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <div className="bg-white pt-48">
+        <div className="bg-white pt-48 pb-56">
           <p className="font-InterExtraBold text-7.5xl text-black text-center mb-58">
             Easily manage as a{" "}
             <span className="font-InterExtraBold text-7.5xl text-main-orange">
               Toggle!
             </span>
           </p>
+          <div className="px-52 flex justify-between">
+            <div className="relative w-192">
+              <Image
+                alt="phone demo"
+                fill
+                src="/assets/images/phone-frame-black.svg"
+              />
+            </div>
+            <div className="w-147 flex flex-col gap-22">
+              {/* first toggle  */}
+              <div className="flex flex-col gap-6">
+                <h3 className="font-InterExtraBold text-black text-5.5xl leading-12">
+                  add an admin passwordless
+                </h3>
+                <p className="font-InterBold text-4.5xl leading-11 text-main-text_grey2">
+                  Never be afraid to give your Instagram account to a stranger
+                  freelancer, or agency.{" "}
+                </p>
+                {/* ----- toggle button  */}
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    value=""
+                    className="sr-only peer"
+                    checked
+                  />
+                  <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
+                </label>
+              </div>
+              {/* 2nd toggle  */}
+              <div className="flex flex-col gap-6">
+                <h3 className="font-InterExtraBold text-black text-5.5xl leading-12">
+                  send & schedule posts
+                </h3>
+                <p className="font-InterBold text-4.5xl leading-11 text-main-text_grey2">
+                  Never be afraid to give your Instagram account to a stranger
+                  freelancer, or agency.{" "}
+                </p>
+                {/* ----- toggle button  */}
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" className="sr-only peer" />
+                  <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
+                </label>
+              </div>
+              {/* 3rd toggle  */}
+              <div className="flex flex-col gap-6">
+                <h3 className="font-InterExtraBold text-black text-5.5xl leading-12">
+                  approve contents
+                </h3>
+                <p className="font-InterBold text-4.5xl leading-11 text-main-text_grey2">
+                  Never be afraid to give your Instagram account to a stranger
+                  freelancer, or agency.{" "}
+                </p>
+                {/* ----- toggle button  */}
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" className="sr-only peer" />
+                  <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>
