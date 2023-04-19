@@ -2,8 +2,29 @@ import Header from "@/features/header";
 import style from "./Home.module.css";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { useState } from "react";
 
 export default function Home() {
+  const [show, setShow] = useState({ id: 0, state: false });
+  const [itemSize, setItemSize] = useState(3);
+  const questionsItems = FAQ.data.map((item, idx) => {
+    const onClick = () => {
+      setShow(prev => {
+        if (prev.id === idx) {
+          if (prev.state) {
+            return { id: prev.id, state: false };
+          } else {
+            return { id: idx, state: true };
+          }
+        } else if (prev.id !== idx) {
+          return { id: idx, state: true };
+        } else {
+          return { id: prev.id, state: false };
+        }
+      });
+    };
+
+    
   return (
     <>
       <Header />
@@ -142,6 +163,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        {/* /* ------------------------------- 4th section ------------------------------  */}
+        <div className="pt-64 px-35">
+          <p className="font-InterExtraBold text-7.5xl text-main-orange">
+            The Questions
+          </p>
+          <p className="font-InterExtraBold text-7.5xl mb-66">You may Asking</p>
         </div>
       </main>
     </>
