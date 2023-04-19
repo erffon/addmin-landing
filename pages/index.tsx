@@ -3,13 +3,16 @@ import style from "./Home.module.css";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
+import { FAQ } from "../features/faq/FAQ";
+import { BsPlus } from "react-icons/bs";
+import { HiOutlineChevronDown } from "react-icons/hi";
 
 export default function Home() {
   const [show, setShow] = useState({ id: 0, state: false });
   const [itemSize, setItemSize] = useState(3);
-  const questionsItems = FAQ.data.map((item, idx) => {
+  const questionsItems = FAQ.map((item, idx) => {
     const onClick = () => {
-      setShow(prev => {
+      setShow((prev) => {
         if (prev.id === idx) {
           if (prev.state) {
             return { id: prev.id, state: false };
@@ -24,7 +27,31 @@ export default function Home() {
       });
     };
 
-    
+    return (
+      <li className={style["list-item"]} key={item.question}>
+        <p onClick={onClick}>
+          <HiOutlineChevronDown
+            className={`${
+              show.state && idx === show.id
+                ? "rotate-180 text-main-orange"
+                : "rotate-0 "
+            } transform transition duration-400 -right-2 absolute text-7xl top-1/2 -translate-y-1/2 text-blue-ryb`}
+          />
+          {item.question}
+        </p>
+
+        <span
+          className={`${style["clps"]} ${
+            show.state && idx === show.id
+              ? style["collapsed"]
+              : style["close-delay"]
+          }`}
+          dangerouslySetInnerHTML={{ __html: item.answer }}
+        ></span>
+      </li>
+    );
+  });
+
   return (
     <>
       <Header />
@@ -126,7 +153,7 @@ export default function Home() {
                     type="checkbox"
                     value=""
                     className="sr-only peer"
-                    checked
+                    defaultChecked
                   />
                   <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
@@ -170,6 +197,7 @@ export default function Home() {
             The Questions
           </p>
           <p className="font-InterExtraBold text-7.5xl mb-66">You may Asking</p>
+          <ul>{questionsItems}</ul>
         </div>
       </main>
     </>

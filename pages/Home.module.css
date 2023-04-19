@@ -20,3 +20,43 @@ input:checked + .toggle-bg:after {
 input:checked + .toggle-bg {
   @apply bg-blue-600 border-blue-600;
 }
+.spec-desc {
+  @apply text-white font-InterBold text-lg pb-6 pr-5 leading-10;
+}
+.download-btns {
+  @apply flex px-2 justify-evenly w-52 h-14 rounded-full shadow-md items-center font-InterBold font-bold hover:scale-95 hover:shadow-lg duration-300 transition bg-white border;
+}
+
+.list-item {
+  @apply pr-20 font-InterBold bg-white mb-12 rounded-3xl;
+}
+.list-item:first-of-type {
+  border-color: transparent;
+}
+
+.list-item > p {
+  color: black;
+  @apply text-5xl font-InterExtraBold relative py-12 cursor-pointer pl-22 pr-5 leading-13;
+}
+
+.clps {
+  max-height: 0;
+  transition: max-height 0.2s, opacity 0.2s, visibility 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  padding-bottom: 0;
+  @apply font-InterRegular text-4.5xl  block text-main-text_grey px-22;
+}
+
+.close-delay {
+  transition-delay: 0.1s, 0s, 0.1s;
+}
+
+.collapsed {
+  transition-delay: 0s, 0.2s, 0s !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  max-height: 300px !important;
+  padding-bottom: 1.25rem !important;
+  @apply pb-20;
+}

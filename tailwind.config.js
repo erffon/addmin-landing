@@ -44,6 +44,7 @@ module.exports = {
       lineHeight: {
         12: "3.5rem",
         11: "2.87rem",
+        13: "3.8rem",
       },
       width: {
         fit: "fit-content",
