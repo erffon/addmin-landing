@@ -36,7 +36,7 @@ input:checked + .toggle-bg {
 
 .list-item > p {
   color: black;
-  @apply text-5xl font-InterExtraBold relative py-12 cursor-pointer pl-22 pr-5 leading-13;
+  @apply text-5xl font-InterExtraBold relative py-12 cursor-pointer pl-22 pr-10 leading-13;
 }
 
 .clps {

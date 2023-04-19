@@ -12,7 +12,7 @@ export const FAQ = [
   {
     question: "3. What features are included in the free plan?",
     answer:
-      "Answer: The free plan includes the ability to publish up to 10 content on Instagram, add unlimited Instagram accounts, members, and permissions to members.",
+      "The free plan includes the ability to publish up to 10 content on Instagram, add unlimited Instagram accounts, members, and permissions to members.",
   },
   {
     question: "4. Can I customize the permissions for each member?",
@@ -23,7 +23,7 @@ export const FAQ = [
     question:
       "5. Can members access my Instagram account settings or profile information?",
     answer:
-      "Answer: No, members can only access the sections of Instagram that you have granted them permission for, and they do not have access to your account settings or profile information.",
+      "No, members can only access the sections of Instagram that you have granted them permission for, and they do not have access to your account settings or profile information.",
   },
   {
     question:

@@ -57,7 +57,7 @@ export default function Home() {
       <Header />
       <main className="pt-62">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
-        <div className="px-22 flex justify-between">
+        <section className="px-22 flex justify-between">
           <div className="w-184 h-188 flex-col flex justify-between">
             <h2 className={style.tagline}>
               <span className={style["tagline-span"]}> add</span> an admin in a{" "}
@@ -85,9 +85,9 @@ export default function Home() {
               fill
             ></Image>
           </div>
-        </div>
+        </section>
         {/* /* ------------------------------- 2nd section ------------------------------  */}
-        <div className="mt-90 px-36 pb-92">
+        <section className="mt-90 px-36 pb-92">
           <p className="text-main-orange font-InterExtraBold text-7.5xl">
             2,900,000
           </p>
@@ -120,9 +120,9 @@ export default function Home() {
               />
             </p>
           </div>
-        </div>
+        </section>
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <div className="bg-white pt-48 pb-56">
+        <section className="bg-white pt-48 pb-56">
           <p className="font-InterExtraBold text-7.5xl text-black text-center mb-58">
             Easily manage as a{" "}
             <span className="font-InterExtraBold text-7.5xl text-main-orange">
@@ -190,15 +190,39 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         {/* /* ------------------------------- 4th section ------------------------------  */}
-        <div className="pt-64 px-35">
+        <section className="pt-64 pb-90 px-35">
           <p className="font-InterExtraBold text-7.5xl text-main-orange">
             The Questions
           </p>
           <p className="font-InterExtraBold text-7.5xl mb-66">You may Asking</p>
           <ul>{questionsItems}</ul>
-        </div>
+        </section>
+        {/* /* ------------------------------- 5th section ------------------------------ */}
+        <section className="bg-white px-24 pt-40">
+          <div className="flex justify-between items-start">
+            <div className="text-7.5xl font-InterExtraBold">
+              <p className="text-black">Keep your Account</p>
+              <p className="text-main-orange -mt-7">Insured</p>
+            </div>
+            <div className="flex gap-7 items-center pt-7">
+              <p className="text-black font-InterBold text-5.5xl">Monthly</p>
+              <label className="relative inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  value=""
+                  className="sr-only peer"
+                  defaultChecked
+                />
+                <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
+              </label>
+              <p className="text-main-orange font-InterBold text-5.5xl">
+                Yearly
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
