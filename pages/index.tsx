@@ -216,7 +216,7 @@ export default function Home() {
                   className="sr-only peer"
                   defaultChecked
                 />
-                <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
+                <div className="w-28 h-15 bg-black peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-black after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
               </label>
               <p className="text-main-orange font-InterBold text-5.5xl">
                 Yearly
