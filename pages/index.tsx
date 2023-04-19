@@ -4,8 +4,8 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import { FAQ } from "../features/faq/FAQ";
-import { BsPlus } from "react-icons/bs";
 import { HiOutlineChevronDown } from "react-icons/hi";
+import Footer from "@/features/footer";
 
 export default function Home() {
   const [show, setShow] = useState({ id: 0, state: false });
@@ -200,7 +200,7 @@ export default function Home() {
           <ul>{questionsItems}</ul>
         </section>
         {/* /* ------------------------------- 5th section ------------------------------ */}
-        <section className="bg-white px-24 pt-40">
+        <section className="bg-white px-24 pt-40 relative">
           {/* titles */}
           <div className="flex justify-between items-start pb-48">
             <div className="text-7.5xl font-InterExtraBold">
@@ -224,7 +224,7 @@ export default function Home() {
             </div>
           </div>
           {/* pricing */}
-          <div className="pb-32 flex justify-between items-end">
+          <div className="pb-184 flex justify-between items-end">
             {/* first  */}
             <div className="bg-black w-134 h-176 rounded-5xl px-13 pt-20 pb-14 flex flex-col justify-between items-start">
               {/* texts */}
@@ -293,7 +293,12 @@ export default function Home() {
               </button>
             </div>
           </div>
+          <div className="absolute w-[986px] h-[579px] right-0 bottom-0">
+            <Image alt="vector" fill src="/assets/images/vector.svg" />
+          </div>
         </section>
+        {/* /* --------------------------------- footer ---------------------------------  */}
+        <Footer />
       </main>
     </>
   );
