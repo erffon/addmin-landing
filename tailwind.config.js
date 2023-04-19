@@ -34,7 +34,9 @@ module.exports = {
     extend: {
       borderWidth: {},
       boxShadow: {},
-      borderRadius: {},
+      borderRadius: {
+        "5xl": "3.125rem",
+      },
       fontSize: {
         "2.5xl": "2.06rem",
         "5.5xl": "3.25rem",
@@ -90,6 +92,7 @@ module.exports = {
         "1/20": "5%",
         "11/50": "22%",
         15: "3.75rem",
+        13: "3.25rem",
         17: "4.25rem",
         22: "5.5rem",
         25: "6.25rem",
@@ -135,6 +138,7 @@ module.exports = {
         156: "39rem",
         166: "41.5rem",
         172: "43rem",
+        176: "44.5rem",
         184: "46rem",
         186: "47rem",
         188: "48rem",

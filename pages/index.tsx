@@ -201,7 +201,8 @@ export default function Home() {
         </section>
         {/* /* ------------------------------- 5th section ------------------------------ */}
         <section className="bg-white px-24 pt-40">
-          <div className="flex justify-between items-start">
+          {/* titles */}
+          <div className="flex justify-between items-start pb-48">
             <div className="text-7.5xl font-InterExtraBold">
               <p className="text-black">Keep your Account</p>
               <p className="text-main-orange -mt-7">Insured</p>
@@ -220,6 +221,76 @@ export default function Home() {
               <p className="text-main-orange font-InterBold text-5.5xl">
                 Yearly
               </p>
+            </div>
+          </div>
+          {/* pricing */}
+          <div className="pb-32 flex justify-between items-end">
+            {/* first  */}
+            <div className="bg-black w-134 h-176 rounded-5xl px-13 pt-20 pb-14 flex flex-col justify-between items-start">
+              {/* texts */}
+              <div>
+                <p className="font-InterExtraBold text-6xl">Air Flow</p>
+                <p className="font-InterBold text-4xl text-main-orange pt-7">
+                  10 content / month
+                </p>
+                <p className="font-InterBold text-4xl pb-5">
+                  Unlimited IG accounts Unlimited admins Unlimited role access
+                </p>
+                <p className="font-InterExtraBold text-6xl text-main-orange">
+                  Free
+                </p>
+              </div>
+              {/* cta button  */}
+              <button className="font-InterExtraBold text-4xl px-12 py-6 bg-white text-black rounded-full hover:scale-95 duration-300 transition ease-out">
+                Start free
+              </button>
+            </div>
+            {/* second */}
+            <div className="bg-white border-4 border-black w-134 h-188 rounded-5xl px-13 pt-20 pb-14 flex flex-col justify-between items-start">
+              {/* texts */}
+              <div>
+                <p className="font-InterBold text-black text-4xl -mt-4">
+                  *Popular*{" "}
+                </p>
+                <p className="font-InterExtraBold text-6xl text-black pt-7">
+                  Family Lunch
+                </p>
+                <p className="font-InterBold text-4xl text-main-orange pt-7">
+                  30 content / month
+                </p>
+                <p className="font-InterBold text-4xl text-black pb-5">
+                  Unlimited IG accounts Unlimited admins Unlimited role access
+                </p>
+                <p className="font-InterExtraBold text-6xl text-main-orange">
+                  25$/m
+                </p>
+              </div>
+              {/* cta button  */}
+              <button className="font-InterExtraBold text-4xl px-12 py-6 bg-black text-white rounded-full hover:scale-95 duration-300 transition ease-out">
+                Order now
+              </button>
+            </div>
+            {/* third  */}
+            <div className="bg-white border-4 border-black w-134 h-176 rounded-5xl px-13 pt-20 pb-14 flex flex-col justify-between items-start">
+              {/* texts */}
+              <div>
+                <p className="font-InterExtraBold text-5.5xl text-black">
+                  Cinema Ticket
+                </p>
+                <p className="font-InterBold text-4xl text-main-orange pt-7">
+                  60 content / month
+                </p>
+                <p className="font-InterBold text-4xl pb-5 text-black">
+                  Unlimited IG accounts Unlimited admins Unlimited role access
+                </p>
+                <p className="font-InterExtraBold text-6xl text-main-orange">
+                  <span className="line-through text-4xl">9$/m</span> 7$/m
+                </p>
+              </div>
+              {/* cta button  */}
+              <button className="font-InterExtraBold text-4xl px-12 py-6 bg-black text-white rounded-full hover:scale-95 duration-300 transition ease-out">
+                Order now
+              </button>
             </div>
           </div>
         </section>
