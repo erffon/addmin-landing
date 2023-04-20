@@ -114,7 +114,20 @@ export default function Home() {
             <p className="font-InterExtraBold text-7.5xl">
               <span>Don’t share your</span>{" "}
               <TypeAnimation
-                sequence={["Life", 1000, "Lifeee", 1000, "Lifeeeeee", 1000]}
+                sequence={[
+                  "Life",
+                  1000,
+                  "Password",
+                  1000,
+                  "Page",
+                  1000,
+                  "Business",
+                  1000,
+                  "Asset",
+                  1000,
+                  "Time",
+                  1000,
+                ]}
                 repeat={Infinity}
                 style={{ color: "#FF782C" }}
               />

@@ -1,9 +1,15 @@
 .nav-links {
-  @apply flex w-132 justify-between;
+  @apply lg:flex 5xl:w-132 xxl:w-100 lg:w-70 justify-between hidden;
 }
 .nav-links li {
-  @apply text-white font-InterExtraBold text-4xl hover:scale-110 transition ease-out duration-300;
+  @apply text-white font-InterExtraBold 5xl:text-4xl xxl:text-3xl lg:text-2xl hover:scale-110 transition ease-out duration-300;
 }
 .cta {
-  @apply px-14 py-6 text-black bg-white rounded-full font-InterExtraBold text-3xl hover:scale-95 transition ease-out duration-300;
+  @apply 5xl:px-14 5xl:py-6 xxl:px-8 xxl:py-5 lg:px-5 lg:py-4 md:px-4 md:py-3 text-black bg-white rounded-full font-InterExtraBold 5xl:text-3xl xxl:text-2xl lg:text-xl md:text-base hover:scale-95 transition ease-out duration-300;
+}
+.logo {
+  @apply relative 5xl:w-78 5xl:h-12 xxl:w-56 lg:w-40 md:w-42 h-10;
+}
+.menu {
+  @apply block lg:hidden text-5xl hover:cursor-pointer hover:scale-110 transition duration-300 ease-out;
 }
