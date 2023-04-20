@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="pt-62">
+      <main className="pt-62 overflow-hidden">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
         <section className="px-22 flex justify-between">
           <div className="w-184 h-188 flex-col flex justify-between">
