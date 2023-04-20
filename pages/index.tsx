@@ -135,7 +135,7 @@ export default function Home() {
           </div>
         </section>
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <section className="bg-white pt-48 pb-56">
+        <section className="bg-white pt-48 pb-56 lg:block hidden">
           <p className="font-InterExtraBold text-7.5xl text-black text-center mb-58">
             Easily manage as a{" "}
             <span className="font-InterExtraBold text-7.5xl text-main-orange">
