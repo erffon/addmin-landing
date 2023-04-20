@@ -14,8 +14,8 @@ module.exports = {
   theme: {
     screens: {
       "5xs": { max: "320px" },
-      "4xs": "376px",
-      "3xs": "426px",
+      "4xs": "375px",
+      "3xs": "425px",
       "2xs": "521px",
       xs: { max: "640px" },
       sm: "640px",

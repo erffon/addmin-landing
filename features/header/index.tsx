@@ -15,11 +15,11 @@ const Header = () => {
           content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0"
         />
       </Head>
-      <header className="px-22 5xl:pt-46 xxl:pt-40 pt-24 flex items-center justify-between">
+      <header className="lg:px-22 md:px-15 px-5 5xl:pt-46 xxl:pt-40 md:pt-24 pt-13 flex items-center justify-between">
         <div className={style.logo}>
           <Image src="./assets/images/logo.svg" fill alt="addmin logo" />
         </div>
-        <nav className="flex 5xl:gap-24 xxl:gap-17 lg:gap-10 md:gap-6 items-center">
+        <nav className="flex 5xl:gap-24 xxl:gap-17 lg:gap-10 md:gap-6 gap-3 items-center">
           <ul className={style["nav-links"]}>
             <a href="#services">
               <li key="header-services">Services</li>
@@ -36,10 +36,23 @@ const Header = () => {
             className={`${style.menu} ${
               menuShow ? "text-white" : "text-main-orange"
             }`}
-            onClick={() => setMenuShow(!menuShow)}
+            onClick={() => setMenuShow((prev) => !prev)}
           />
         </nav>
       </header>
+      {!menuShow && (
+        <ul className={style["nav-links-small"]}>
+          <a href="#services">
+            <li key="header-services-small">Services</li>
+          </a>
+          <a href="#pricing">
+            <li key="header-pricing-small">Pricing</li>
+          </a>
+          <a href="#faq">
+            <li key="header-faq-small">FAQ</li>
+          </a>
+        </ul>
+      )}
     </>
   );
 };
