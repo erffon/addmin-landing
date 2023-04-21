@@ -140,6 +140,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <span id="services" />
         {/* /* ------------------------------- 3rd section ------------------------------  */}
         <section className="bg-white xl:pt-48 lg:pt-35 xl:pb-56 lg:pb-35 lg:block hidden">
           <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-black text-center xl:mb-58 lg:mb-35">
@@ -231,6 +232,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <span id="faq" />
         {/* /* ------------------------------- 4th section ------------------------------  */}
         <section className="5xl:pt-64 xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 5xl:pb-90 xxl:pb-82 xl:pb-62 lg:pb-50 md:pb-40 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
           <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
@@ -241,6 +243,7 @@ export default function Home() {
           </p>
           <ul>{questionsItems}</ul>
         </section>
+        <span id="pricing" />
         {/* /* ------------------------------- 5th section ------------------------------ */}
         <section className="bg-white md:px-24 px-5 pt-40 relative">
           {/* titles */}
