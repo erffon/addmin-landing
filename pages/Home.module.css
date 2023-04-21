@@ -63,3 +63,6 @@ input:checked + .toggle-bg {
   padding-bottom: 1.25rem !important;
   @apply xl:pb-20 pb-10;
 }
+.pricing-title {
+  @apply 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5.5xl md:text-5.5xl text-4.5xl font-InterExtraBold lg:text-left text-center;
+}
