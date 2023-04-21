@@ -14,6 +14,7 @@ const Header = () => {
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0"
         />
+        <link rel="shortcut icon" href="/favicon2.ico" />
       </Head>
       <header className="lg:px-22 md:px-15 px-5 5xl:pt-46 xxl:pt-40 md:pt-24 pt-13 flex items-center justify-between">
         <div className={style.logo}>

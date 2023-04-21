@@ -2,13 +2,15 @@ import Header from "@/features/header";
 import style from "./Home.module.css";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FAQ } from "../features/faq/FAQ";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import Footer from "@/features/footer";
 
 export default function Home() {
   const [show, setShow] = useState({ id: 0, state: false });
+  const [toggles, setToggles] = useState([true, false, false]);
+  const [mockupSrc, setMockupSrc] = useState("");
   const questionsItems = FAQ.map((item, idx) => {
     const onClick = () => {
       setShow((prev) => {
@@ -26,6 +28,12 @@ export default function Home() {
       });
     };
 
+    useEffect(() => {
+      if (toggles[0]) setMockupSrc("/assets/images/frame1.png");
+      if (toggles[1]) setMockupSrc("/assets/images/frame2.png");
+      if (toggles[2]) setMockupSrc("/assets/images/frame3.png");
+    }, [toggles]);
+
     return (
       <li className={style["list-item"]} key={item.question}>
         <p onClick={onClick}>
@@ -34,7 +42,7 @@ export default function Home() {
               show.state && idx === show.id
                 ? "rotate-180 text-main-orange"
                 : "rotate-0 "
-            } transform transition duration-400 -right-2 absolute text-7xl top-1/2 -translate-y-1/2 text-blue-ryb`}
+            } transform transition duration-400 xxl:-right-2 xl:-right-12 lg:-right-10 md:-right-13 -right-15 absolute xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl text-4.5xl top-1/2 -translate-y-1/2 text-blue-ryb`}
           />
           {item.question}
         </p>
@@ -132,28 +140,24 @@ export default function Home() {
           </div>
         </section>
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <section className="bg-white pt-48 pb-56 lg:block hidden">
-          <p className="font-InterExtraBold text-7.5xl text-black text-center mb-58">
+        <section className="bg-white xl:pt-48 lg:pt-35 xl:pb-56 lg:pb-35 lg:block hidden">
+          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-black text-center xl:mb-58 lg:mb-35">
             Easily manage as a{" "}
-            <span className="font-InterExtraBold text-7.5xl text-main-orange">
+            <span className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-main-orange">
               Toggle!
             </span>
           </p>
-          <div className="px-52 flex justify-between">
-            <div className="relative w-192">
-              <Image
-                alt="phone demo"
-                fill
-                src="/assets/images/phone-frame-black.svg"
-              />
+          <div className="xl:px-52 lg:px-32 flex justify-center">
+            <div className="relative 5xl:w-184 xl:w-176 5xl:h-[62rem] xxl:h-192 xl:h-188 lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-10 xl:-mt-8 lg:-mt-5">
+              <Image alt="phone demo" fill src={mockupSrc} />
             </div>
-            <div className="w-147 flex flex-col gap-22">
+            <div className="5xl:w-120 xxl:w-120 xl:w-112 lg:w-105 flex flex-col 5xl:gap-12 xxl:gap-10 lg:gap-8">
               {/* first toggle  */}
-              <div className="flex flex-col gap-6">
-                <h3 className="font-InterExtraBold text-black text-5.5xl leading-12">
+              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl lg:text-2xl xxl:leading-10 xl:leading-7 5xl:leading-[3rem]">
                   add an admin passwordless
                 </h3>
-                <p className="font-InterBold text-4.5xl leading-11 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl leading-11 text-main-text_grey2 5xl:leading-10 xl:leading-7">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -163,50 +167,77 @@ export default function Home() {
                     type="checkbox"
                     value=""
                     className="sr-only peer"
-                    defaultChecked
+                    defaultChecked={toggles[0] ? true : false}
+                    onClick={() => {
+                      var newArr = [...toggles];
+                      newArr = [true, false, false];
+                      setToggles(newArr);
+                    }}
                   />
-                  <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
               {/* 2nd toggle  */}
-              <div className="flex flex-col gap-6">
-                <h3 className="font-InterExtraBold text-black text-5.5xl leading-12">
+              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl lg:text-2xl xl:leading-7 5xl:leading-[3.5rem]">
                   send & schedule posts
                 </h3>
-                <p className="font-InterBold text-4.5xl leading-11 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl 5xl:leading-10 xl:leading-7 text-main-text_grey2">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
                 {/* ----- toggle button  */}
                 <label className="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" className="sr-only peer" />
-                  <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
+                  <input
+                    type="checkbox"
+                    value=""
+                    className="sr-only peer"
+                    defaultChecked={toggles[1] ? true : false}
+                    onClick={() => {
+                      var newArr = [...toggles];
+                      newArr = [false, true, false];
+                      setToggles(newArr);
+                    }}
+                  />
+                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
               {/* 3rd toggle  */}
-              <div className="flex flex-col gap-6">
-                <h3 className="font-InterExtraBold text-black text-5.5xl leading-12">
+              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl lg:text-2xl xl:leading-7 5xl:leading-[3.5rem]">
                   approve contents
                 </h3>
-                <p className="font-InterBold text-4.5xl leading-11 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl 5xl:leading-10 xl:leading-7 text-main-text_grey2">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
                 {/* ----- toggle button  */}
                 <label className="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" className="sr-only peer" />
-                  <div className="w-28 h-15 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[8px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:h-12 after:w-12 after:transition-all peer-checked:bg-main-orange"></div>
+                  <input
+                    type="checkbox"
+                    value=""
+                    className="sr-only peer"
+                    defaultChecked={toggles[2] ? true : false}
+                    onClick={() => {
+                      var newArr = [...toggles];
+                      newArr = [false, false, true];
+                      setToggles(newArr);
+                    }}
+                  />
+                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
             </div>
           </div>
         </section>
         {/* /* ------------------------------- 4th section ------------------------------  */}
-        <section className="pt-64 pb-90 px-35">
-          <p className="font-InterExtraBold text-7.5xl text-main-orange">
+        <section className="5xl:pt-64 xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 5xl:pb-90 xxl:pb-82 xl:pb-62 lg:pb-50 md:pb-40 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
+          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
             The Questions
           </p>
-          <p className="font-InterExtraBold text-7.5xl mb-66">You may Asking</p>
+          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl 5xl:mb-66 xxl:mb-56 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
+            You may Asking
+          </p>
           <ul>{questionsItems}</ul>
         </section>
         {/* /* ------------------------------- 5th section ------------------------------ */}
