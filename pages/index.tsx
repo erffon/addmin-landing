@@ -9,7 +9,6 @@ import Footer from "@/features/footer";
 
 export default function Home() {
   const [show, setShow] = useState({ id: 0, state: false });
-  const [itemSize, setItemSize] = useState(3);
   const questionsItems = FAQ.map((item, idx) => {
     const onClick = () => {
       setShow((prev) => {
@@ -55,30 +54,28 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="pt-62 overflow-hidden">
+      <main className="5xl:pt-62 xxl:pt-56 xl:pt-50 lg:pt-44 md:pt-35 pt-20 overflow-hidden">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
-        <section className="px-22 flex justify-between">
-          <div className="w-184 h-188 flex-col flex justify-between">
+        <section className="xl:px-22 px-17 lg:flex lg:flex-row lg:justify-center items-center flex flex-col-reverse justify-between">
+          <div className="xl:w-184 xxl:h-188 xl:h-172 lg:w-176 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
             <h2 className={style.tagline}>
               <span className={style["tagline-span"]}> add</span> an admin in a{" "}
               <span className={style["tagline-span"]}>min!</span>
             </h2>
-            <div>
-              <p className="font-InterBold text-5.5xl">
-                Don’t Share the Password!
-              </p>
-              <p className="font-InterBold text-5.5xl">
+            <div className="font-InterBold 5xl:text-5.5xl xxl:text-4.5xl xl:text-4xl md:text-3xl text-base lg:my-0 md:my-13 my-10 lg:px-0 md:px-25 lg:text-left text-center">
+              <p>Don’t Share the Password!</p>
+              <p className="5xl:mt-10 xxl:mt-4 xl:mt-3">
                 Access & Permitting Admins
               </p>
             </div>
-            <div>
+            <div className="flex flex-col lg:items-start items-center">
               <button className={style["hero-cta"]}>Get started free</button>
-              <p className="font-InterBold text-3xl mt-9">
+              <p className="font-InterBold 5xl:text-3xl xxl:text-2.5xl xl:text-2xl md:text-xl text-sm lg:mt-9 md:mt-6 mt-4">
                 No credit card requirement
               </p>
             </div>
           </div>
-          <div className="relative w-186 h-192">
+          <div className={style["hero-img"]}>
             <Image
               alt="hero section screenshot"
               src="/assets/images/1-screenshot.png"
@@ -87,23 +84,23 @@ export default function Home() {
           </div>
         </section>
         {/* /* ------------------------------- 2nd section ------------------------------  */}
-        <section className="mt-90 px-36 pb-92">
-          <p className="text-main-orange font-InterExtraBold text-7.5xl">
+        <section className="5xl:mt-90 xxl:mt-78 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-92 lg:pb-82">
+          <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
             2,900,000
           </p>
-          <p className="font-InterExtraBold text-7.5xl">
-            <span className="text-main-orange font-InterExtraBold text-7.5xl">
+          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl">
+            <span className="text-main-orange font-InterExtraBold 5xl:text-7.5xl xxl:7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl 4xs:text-2xl">
               Instagram Business Accounts
             </span>{" "}
             Disappeared Just By Sharing the Password and being Granted Full
             Access by someone else!
           </p>
-          <p className="font-InterExtraBold text-5.5xl mt-15">
+          <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-5xl xl:text-4.5xl lg:text-3xl md:text-2xl 3xs:text-lg 4xs:text-base xxl:mt-15 md:mt-17 mt-10">
             -- crunchbase 2020
           </p>
           {/* toggle button and motto */}
-          <div className="mt-108 flex justify-center items-center gap-9">
-            <div className="relative w-35 h-17">
+          <div className="5xl:mt-108 xxl:mt-90 xl:mt-80 lg:mt-70 md:mt-60 mt-40 flex justify-center items-center xl:gap-9 lg:gap-6 md:gap-4 gap-2 -mx-28">
+            <div className="relative 5xl:w-35 5xl:h-17 xxl:w-32 xxl:h-13 xl:w-25 xl:h-12 lg:w-20 lg:h-10 md:w-16 md:h-10 w-12 h-5">
               <Image
                 src="/assets/images/toggle-button.svg"
                 fill
@@ -111,7 +108,7 @@ export default function Home() {
               />
             </div>
             {/* text animation  */}
-            <p className="font-InterExtraBold text-7.5xl">
+            <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5xl md:text-4.5xl text-xl">
               <span>Don’t share your</span>{" "}
               <TypeAnimation
                 sequence={[

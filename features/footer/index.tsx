@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="xxl:pt-52 xl:pt-42 lg:pt-32 md:pt-24 pt-20 5xl:px-40 lg:px-22 md:px-15 px-5 pb-22">
+    <footer className="xxl:pt-52 xl:pt-42 lg:pt-32 md:pt-24 pt-20 5xl:px-40 lg:px-22 md:px-10 px-5 pb-22">
       <div className="md:flex block justify-between items-start xl:pb-48 lg:pb-25 md:pb-25 pb-16">
         <div>
           <h3 className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5xl md:text-4.5xl 3xs:text-4xl text-3xl w-4/5 md:w-2/3 md:mx-0 mx-auto text-center md:text-left">
