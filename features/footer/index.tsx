@@ -18,18 +18,18 @@ const Footer = () => {
         {/* -------------------------------------------------------------------------------------- */}
         <div>
           <div className="relative 5xl:w-104 xxl:w-96 xl:w-84 xxl:h-32 xl:h-24 lg:w-64 lg:h-20 md:w-50 md:h-14 w-full h-17 xxl:mt-7 md:mt-0 mt-15 mx-auto grayscale cursor-not-allowed">
-            <Image fill src="/assets/images/pwa-cta.svg" alt="pwa cta" />
+            <Image fill src="/asset/images/pwa-cta.svg" alt="pwa cta" />
           </div>
           <div className="relative 5xl:w-104 xxl:w-96 xxl:h-32 xl:w-84 xl:h-24 lg:w-64 lg:h-20 md:w-50 md:h-14 w-full h-17 xxl:mt-7 mt-5 hover:scale-95 duration-300 ease-out transition mx-auto">
             <a href="/soon">
-              <Image fill src="/assets/images/appstore-cta.svg" alt="pwa cta" />
+              <Image fill src="/asset/images/appstore-cta.svg" alt="pwa cta" />
             </a>
           </div>
           <div className="relative 5xl:w-104 xxl:w-96 xxl:h-32 xl:w-84 xl:h-24 lg:w-64 lg:h-20 md:w-50 md:h-14 w-full h-17 xxl:mt-7 mt-5 hover:scale-95 duration-300 ease-out transition mx-auto">
             <a href="/soon">
               <Image
                 fill
-                src="/assets/images/googleplay-cta.svg"
+                src="/asset/images/googleplay-cta.svg"
                 alt="pwa cta"
               />
             </a>

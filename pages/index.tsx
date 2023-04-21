@@ -30,9 +30,9 @@ export default function Home() {
     };
 
     useEffect(() => {
-      if (toggles[0]) setMockupSrc("/assets/images/frame1.png");
-      if (toggles[1]) setMockupSrc("/assets/images/frame2.png");
-      if (toggles[2]) setMockupSrc("/assets/images/frame3.png");
+      if (toggles[0]) setMockupSrc("/asset/images/frame1.png");
+      if (toggles[1]) setMockupSrc("/asset/images/frame2.png");
+      if (toggles[2]) setMockupSrc("/asset/images/frame3.png");
     }, [toggles]);
 
     return (
@@ -87,7 +87,7 @@ export default function Home() {
           <div className={style["hero-img"]}>
             <Image
               alt="hero section screenshot"
-              src="/assets/images/1-screenshot.png"
+              src="/asset/images/1-screenshot.png"
               fill
             ></Image>
           </div>
@@ -111,7 +111,7 @@ export default function Home() {
           <div className="5xl:mt-108 xxl:mt-90 xl:mt-80 lg:mt-70 md:mt-60 mt-40 flex justify-center items-center xl:gap-9 lg:gap-6 md:gap-4 gap-2 -mx-28">
             <div className="relative 5xl:w-35 5xl:h-17 xxl:w-32 xxl:h-13 xl:w-25 xl:h-12 lg:w-20 lg:h-10 md:w-16 md:h-10 w-12 h-5">
               <Image
-                src="/assets/images/toggle-button.svg"
+                src="/asset/images/toggle-button.svg"
                 fill
                 alt="addmin logo and toggle button"
               />
@@ -442,7 +442,7 @@ export default function Home() {
             </div>
           )}
           <div className="absolute 5xl:w-[986px] 5xl:h-[579px] xxl:w-[900px] xxl:h-[500px] xl:w-[700px] xl:h-[420px] lg:w-[600px] lg:h-[360px] md:w-92 md:h-60 w-82 h-50 right-0 bottom-0">
-            <Image alt="vector" fill src="/assets/images/vector.svg" />
+            <Image alt="vector" fill src="/asset/images/vector.svg" />
           </div>
         </section>
         {/* /* --------------------------------- footer ---------------------------------  */}

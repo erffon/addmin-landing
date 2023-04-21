@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: "InterRegular";
-  src: url("../public/assets/fonts/Inter-Regular.ttf");
+  src: url("../public/asset/fonts/Inter-Regular.ttf");
 }
 @font-face {
   font-family: "InterBold";
-  src: url("../public/assets/fonts/Inter-Bold.ttf");
+  src: url("../public/asset/fonts/Inter-Bold.ttf");
 }
 @font-face {
   font-family: "InterBlack";
-  src: url("../public/assets/fonts/Inter-Black.ttf");
+  src: url("../public/asset/fonts/Inter-Black.ttf");
 }
 @font-face {
   font-family: "InterExtraBold";
-  src: url("../public/assets/fonts/Inter-ExtraBold.ttf");
+  src: url("../public/asset/fonts/Inter-ExtraBold.ttf");
 }
 
 body {
