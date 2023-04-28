@@ -10,7 +10,7 @@ import Footer from "@/features/footer";
 export default function Home() {
   const [show, setShow] = useState({ id: 0, state: false });
   const [toggles, setToggles] = useState([true, false, false]);
-  const [mockupSrc, setMockupSrc] = useState("");
+  const [mockupSrc, setMockupSrc] = useState("/asset/images/frame1.png");
   const [monthly, setMonthly] = useState(false);
   const questionsItems = FAQ.map((item, idx) => {
     const onClick = () => {
@@ -28,12 +28,6 @@ export default function Home() {
         }
       });
     };
-
-    useEffect(() => {
-      if (toggles[0]) setMockupSrc("/asset/images/frame1.png");
-      if (toggles[1]) setMockupSrc("/asset/images/frame2.png");
-      if (toggles[2]) setMockupSrc("/asset/images/frame3.png");
-    }, [toggles]);
 
     return (
       <li className={style["list-item"]} key={item.question}>
@@ -59,6 +53,29 @@ export default function Home() {
       </li>
     );
   });
+
+  const toggleHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.name === "first") {
+      e.target.checked = true;
+      let newToggles = toggles;
+      newToggles[0] = true;
+      setToggles(newToggles);
+    } else if (e.target.name === "second") {
+      e.target.checked = true;
+      let newToggles = toggles;
+      newToggles[1] = true;
+      setToggles(newToggles);
+      setMockupSrc("/asset/images/frame2.png");
+      e.target.disabled = true;
+    } else if (e.target.name === "third") {
+      e.target.checked = true;
+      let newToggles = toggles;
+      newToggles[2] = true;
+      setToggles(newToggles);
+      setMockupSrc("/asset/images/frame3.png");
+      e.target.disabled = true;
+    }
+  };
 
   return (
     <>
@@ -169,10 +186,9 @@ export default function Home() {
                     type="checkbox"
                     value=""
                     className="sr-only peer"
+                    name="first"
                     defaultChecked={toggles[0] ? true : false}
-                    onClick={() => {
-                      setToggles([true, false, false]);
-                    }}
+                    onChange={toggleHandler}
                   />
                   <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
@@ -190,12 +206,11 @@ export default function Home() {
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input
                     type="checkbox"
+                    name="second"
                     value=""
                     className="sr-only peer"
                     defaultChecked={toggles[1] ? true : false}
-                    onClick={() => {
-                      setToggles([false, true, false]);
-                    }}
+                    onChange={toggleHandler}
                   />
                   <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
@@ -213,12 +228,11 @@ export default function Home() {
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input
                     type="checkbox"
+                    name="third"
                     value=""
                     className="sr-only peer"
                     defaultChecked={toggles[2] ? true : false}
-                    onClick={() => {
-                      setToggles([false, false, true]);
-                    }}
+                    onChange={toggleHandler}
                   />
                   <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
