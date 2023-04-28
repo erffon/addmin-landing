@@ -37,7 +37,7 @@ export default function Home() {
               show.state && idx === show.id
                 ? "rotate-180 text-main-orange"
                 : "rotate-0 "
-            } transform transition duration-400 xxl:-right-2 xl:-right-12 lg:-right-10 md:-right-13 -right-15 absolute xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl text-4.5xl top-1/2 -translate-y-1/2 text-blue-ryb`}
+            } transform transition duration-400 xxl:-right-2 xl:-right-12 lg:-right-10 md:-right-13 -right-15 absolute xl:text-6xl lg:text-5.5xl md:text-5xl text-4.5xl top-1/2 -translate-y-1/2 text-blue-ryb`}
           />
           {item.question}
         </p>
@@ -242,11 +242,11 @@ export default function Home() {
         </section>
         <span id="faq" />
         {/* /* ------------------------------- 4th section ------------------------------  */}
-        <section className="5xl:pt-64 xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 5xl:pb-90 xxl:pb-82 xl:pb-62 lg:pb-50 md:pb-40 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
-          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
+        <section className="xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 xxl:pb-82 xl:pb-62 lg:pb-50 md:pb-40 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
+          <p className="font-InterExtraBold xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
             The Questions
           </p>
-          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl 5xl:mb-66 xxl:mb-56 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
+          <p className="font-InterExtraBold xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl xxl:mb-56 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
             You may Asking
           </p>
           <ul className="select-none">{questionsItems}</ul>

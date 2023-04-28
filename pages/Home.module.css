@@ -39,7 +39,7 @@ input:checked + .toggle-bg {
 
 .list-item > p {
   color: black;
-  @apply 5xl:text-5xl xxl:text-4.5xl xl:text-4xl lg:text-3xl md:text-2.5xl 3xs:text-2xl 4xs:text-xl font-InterExtraBold relative xxl:py-12 xl:py-10 lg:py-8 md:py-6 py-5 cursor-pointer 5xl:pl-22 xxl:pl-15 xl:pl-10 lg:pl-12 md:pl-8 pl-5 xl:pr-10 lg:pr-5 md:pr-3 pr-0 5xl:leading-13 xxl:leading-[3.5rem] xl:leading-[3rem] lg:leading-[2.5rem] md:leading-10 leading-[1.8rem] -mr-3 3xs:mr-0;
+  @apply xxl:text-4.5xl xl:text-4xl lg:text-3xl md:text-2.5xl 3xs:text-2xl 4xs:text-xl font-InterExtraBold relative xxl:py-12 xl:py-10 lg:py-8 md:py-6 py-5 cursor-pointer 5xl:pl-22 xxl:pl-15 xl:pl-10 lg:pl-12 md:pl-8 pl-5 xl:pr-10 lg:pr-5 md:pr-3 pr-0 5xl:leading-13 xxl:leading-[4rem] xl:leading-[3rem] lg:leading-[2.5rem] md:leading-10 leading-[1.8rem] -mr-3 3xs:mr-0;
 }
 
 .clps {
@@ -48,7 +48,7 @@ input:checked + .toggle-bg {
   opacity: 0;
   visibility: hidden;
   padding-bottom: 0;
-  @apply font-InterRegular 5xl:text-4.5xl xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl text-base block text-main-text_grey 5xl:px-22 xxl:px-17 xl:px-10 lg:px-12 md:px-10 px-6 lg:w-188 xl:w-[60rem] xxl:w-[68rem] 5xl:w-[90rem] md:w-140 3xs:w-80 4xs:w-72;
+  @apply font-InterRegular xxl:text-4xl xl:text-3xl lg:text-2xl md:text-2xl text-base block text-main-text_grey 5xl:px-22 xxl:px-17 xl:px-10 lg:px-12 md:px-10 px-6 lg:w-188 xl:w-[60rem] xxl:w-[75rem] 5xl:w-[90rem] md:w-140 3xs:w-80 4xs:w-72;
 }
 
 .close-delay {
@@ -61,7 +61,7 @@ input:checked + .toggle-bg {
   visibility: visible !important;
   max-height: 300px !important;
   padding-bottom: 1.25rem !important;
-  @apply xl:pb-20 pb-10;
+  @apply xl:pb-20 pb-10 leading-[3rem];
 }
 .pricing-title {
   @apply 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5.5xl md:text-5.5xl text-4.5xl font-InterExtraBold lg:text-left text-center;
