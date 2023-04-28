@@ -289,9 +289,9 @@ export default function Home() {
           {!monthly && (
             <div className="5xl:pb-184 xxl:pb-166 xl:pb-132 lg:pb-100 md:pb-72 pb-60 lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xxl:mx-0 xl:-mx-10 lg:-mx-17">
               {/* first  */}
-              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 rounded-5xl 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-start">
+              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
-                <div>
+                <div className="mb-10">
                   <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5xl text-4.5xl">
                     Air Flow
                   </p>
@@ -308,14 +308,14 @@ export default function Home() {
                   </p>
                 </div>
                 {/* cta button  */}
-                <button className="font-InterExtraBold 5xl:text-4xl xxl:text-3xl text-2xl 5xl:px-12 xxl:px-10 px-8 5xl:py-6 xxl:py-5 py-4 bg-white text-black rounded-full hover:scale-95 duration-300 transition ease-out">
+                <button className="font-InterExtraBold 5xl:text-4xl xxl:text-3xl text-2xl 5xl:px-12 xxl:px-10 px-8 5xl:py-6 xxl:py-5 py-4 bg-white text-black rounded-full hover:scale-95 duration-300 transition ease-out text-center">
                   Start free
                 </button>
               </div>
               {/* second */}
-              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-184 5xl:h-188 xl:w-82 xl:h-172 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-5xl 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-start">
+              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-184 5xl:h-[52rem] xl:w-82 xl:h-172 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
-                <div>
+                <div className="mb-10">
                   <p className="font-InterBold text-black 5xl:text-4xl xxl:text-3xl text-2xl -mt-4">
                     *Popular*{" "}
                   </p>
@@ -345,9 +345,9 @@ export default function Home() {
                 </button>
               </div>
               {/* third  */}
-              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-5xl 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-start">
+              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
-                <div>
+                <div className="mb-10">
                   <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4.5xl md:text-4xl text-3xl text-black">
                     Cinema Ticket
                   </p>
