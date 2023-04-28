@@ -110,7 +110,7 @@ export default function Home() {
           </div>
         </section>
         {/* /* ------------------------------- 2nd section ------------------------------  */}
-        <section className="5xl:mt-90 xxl:mt-78 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-92 lg:pb-82">
+        <section className="5xl:mt-90 xxl:mt-78 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-92 lg:pb-82 pb-40">
           <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
             2,900,000
           </p>
@@ -159,24 +159,24 @@ export default function Home() {
         </section>
         <span id="services" />
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <section className="bg-white xl:pt-48 lg:pt-35 xl:pb-56 lg:pb-35 lg:block hidden">
-          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-black text-center xl:mb-58 lg:mb-35">
+        <section className="bg-white xl:pt-48 lg:pt-35 pt-25 xl:pb-50 lg:pb-35 md:px-22 px-17 pb-24">
+          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center xl:mb-50 lg:mb-35 mb-20">
             Easily manage as a{" "}
             <span className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-main-orange">
               Toggle!
             </span>
           </p>
           <div className="xl:px-52 lg:px-32 flex justify-center">
-            <div className="relative 5xl:w-184 xl:w-176 5xl:h-[62rem] xxl:h-192 xl:h-188 lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-10 xl:-mt-8 lg:-mt-5">
+            <div className="relative 5xl:w-[42rem] xl:w-176 5xl:h-[62rem] xxl:h-192 xl:h-188 lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-10 xl:-mt-8 lg:-mt-5 lg:block hidden">
               <Image alt="phone demo" fill src={mockupSrc} />
             </div>
-            <div className="5xl:w-120 xxl:w-120 xl:w-112 lg:w-105 flex flex-col 5xl:gap-12 xxl:gap-10 lg:gap-8">
+            <div className="5xl:w-120 xxl:w-120 xl:w-112 lg:w-105 flex flex-col 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-3 md:px-20">
               {/* first toggle  */}
-              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl lg:text-2xl xxl:leading-10 xl:leading-7 5xl:leading-[3rem]">
+              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[3rem]">
                   add an admin passwordless
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl leading-11 text-main-text_grey2 5xl:leading-10 xl:leading-7">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -194,11 +194,11 @@ export default function Home() {
                 </label>
               </div>
               {/* 2nd toggle  */}
-              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl lg:text-2xl xl:leading-7 5xl:leading-[3.5rem]">
+              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xl:leading-7 5xl:leading-[3.5rem]">
                   send & schedule posts
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl 5xl:leading-10 xl:leading-7 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl text-lg leading-5 5xl:leading-10 xl:leading-7 text-main-text_grey2">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -216,11 +216,11 @@ export default function Home() {
                 </label>
               </div>
               {/* 3rd toggle  */}
-              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl lg:text-2xl xl:leading-7 5xl:leading-[3.5rem]">
+              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl lg:text-2xl xl:leading-7 5xl:leading-[3.5rem]">
                   approve contents
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl 5xl:leading-10 xl:leading-7 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl text-lg leading-5 5xl:leading-10 xl:leading-7 text-main-text_grey2">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -242,18 +242,18 @@ export default function Home() {
         </section>
         <span id="faq" />
         {/* /* ------------------------------- 4th section ------------------------------  */}
-        <section className="xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 xxl:pb-82 xl:pb-62 lg:pb-50 md:pb-40 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
+        <section className="xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 xxl:pb-70 xl:pb-62 lg:pb-50 md:pb-20 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
           <p className="font-InterExtraBold xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
             The Questions
           </p>
-          <p className="font-InterExtraBold xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl xxl:mb-56 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
+          <p className="font-InterExtraBold xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl xxl:mb-46 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
             You may Asking
           </p>
           <ul className="select-none">{questionsItems}</ul>
         </section>
         <span id="pricing" />
         {/* /* ------------------------------- 5th section ------------------------------ */}
-        <section className="bg-white md:px-24 px-5 pt-40 relative">
+        <section className="bg-white md:px-24 px-5 pt-25 5xl:pt-40 relative">
           {/* titles */}
           <div className="lg:flex block justify-between items-start xxl:pb-48 xl:pb-36 lg:pb-28 pb-20">
             <div className={style["pricing-title"]}>
