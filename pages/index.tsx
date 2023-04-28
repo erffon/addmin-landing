@@ -190,7 +190,7 @@ export default function Home() {
                     defaultChecked={toggles[0] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
               {/* 2nd toggle  */}
@@ -212,7 +212,7 @@ export default function Home() {
                     defaultChecked={toggles[1] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
               {/* 3rd toggle  */}
@@ -234,7 +234,7 @@ export default function Home() {
                     defaultChecked={toggles[2] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
             </div>
@@ -278,7 +278,7 @@ export default function Home() {
                     setMonthly((prev) => !prev);
                   }}
                 />
-                <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 md:w-20 md:h-8 w-17 h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 md:after:w-7 md:after:h-7 after:w-6 after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] md:after:left-[1rem] md:after:top-[0.1rem] after:top-[0.1rem] after:left-[0.95rem] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
+                <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 md:w-20 md:h-8 w-17 h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 md:after:w-7 md:after:h-7 after:w-6 after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] md:after:left-[8px] md:after:top-[0.1rem] after:top-[0.1rem] after:left-[7px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
               </label>
               <p className="text-main-orange font-InterBold 5xl:text-5.5xl xxl:text-5xl xl:text-4.5xl md:text-3xl text-2xl">
                 Yearly
