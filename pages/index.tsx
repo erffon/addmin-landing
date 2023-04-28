@@ -65,7 +65,7 @@ export default function Home() {
       <Header />
       <main className="5xl:pt-62 xxl:pt-56 xl:pt-50 lg:pt-44 md:pt-35 pt-20 overflow-hidden">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
-        <section className="xl:px-22 px-17 lg:flex lg:flex-row lg:justify-center items-center flex flex-col-reverse justify-between">
+        <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse justify-between">
           <div className="xl:w-184 xxl:h-188 xl:h-172 lg:w-176 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
             <h2 className={style.tagline}>
               <span className={style["tagline-span"]}> add</span> an admin in a{" "}
@@ -171,9 +171,7 @@ export default function Home() {
                     className="sr-only peer"
                     defaultChecked={toggles[0] ? true : false}
                     onClick={() => {
-                      var newArr = [...toggles];
-                      newArr = [true, false, false];
-                      setToggles(newArr);
+                      setToggles([true, false, false]);
                     }}
                   />
                   <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
@@ -196,9 +194,7 @@ export default function Home() {
                     className="sr-only peer"
                     defaultChecked={toggles[1] ? true : false}
                     onClick={() => {
-                      var newArr = [...toggles];
-                      newArr = [false, true, false];
-                      setToggles(newArr);
+                      setToggles([false, true, false]);
                     }}
                   />
                   <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
@@ -221,9 +217,7 @@ export default function Home() {
                     className="sr-only peer"
                     defaultChecked={toggles[2] ? true : false}
                     onClick={() => {
-                      var newArr = [...toggles];
-                      newArr = [false, false, true];
-                      setToggles(newArr);
+                      setToggles([false, false, true]);
                     }}
                   />
                   <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[17px] xxl:after:top-[4.5px] xxl:after:left-[18px] xl:after:top-[3.5px] xl:after:left-[17px] lg:after:top-[1.8px] lg:after:left-[13px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
