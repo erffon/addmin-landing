@@ -44,7 +44,8 @@ input:checked + .toggle-bg {
 
 .clps {
   max-height: 0;
-  transition: max-height 0.2s, opacity 0.2s, visibility 0.2s;
+  transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out;
   opacity: 0;
   visibility: hidden;
   padding-bottom: 0;
