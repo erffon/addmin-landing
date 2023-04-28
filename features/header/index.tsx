@@ -45,6 +45,7 @@ const Header = () => {
       </header>
       {!menuShow && (
         <ul className={style["nav-links-small"]}>
+          <button className={style["cta-small"]}>Get APP Free</button>
           <a href="#services">
             <li key="header-services-small">Services</li>
           </a>

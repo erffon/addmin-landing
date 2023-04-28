@@ -2,7 +2,7 @@
   @apply lg:flex 5xl:w-132 xxl:w-100 lg:w-70 justify-between hidden;
 }
 .nav-links-small {
-  @apply flex flex-col bg-white text-black py-5 px-15 mt-7 gap-5 text-right font-InterBold md:text-2xl 4xs:text-xl text-lg justify-between lg:hidden;
+  @apply flex flex-col items-end bg-white text-black py-5 px-15 mt-7 gap-5 text-right font-InterBold md:text-2xl 4xs:text-xl text-lg justify-between lg:hidden;
 }
 .nav-links-small li {
   @apply hover:scale-95 transition ease-out duration-300;
@@ -11,7 +11,10 @@
   @apply text-white font-InterExtraBold 5xl:text-4xl xxl:text-3xl lg:text-2xl hover:scale-110 transition ease-out duration-300;
 }
 .cta {
-  @apply 5xl:px-14 5xl:py-6 xxl:px-8 xxl:py-5 lg:px-5 lg:py-4 md:px-4 md:py-3 px-3 py-2 text-black bg-white rounded-full font-InterExtraBold 5xl:text-3xl xxl:text-2xl lg:text-xl md:text-xl 3xs:text-base text-sm hover:scale-95 transition ease-out duration-300;
+  @apply 5xl:px-14 5xl:py-6 xxl:px-8 xxl:py-5 lg:px-5 lg:py-4 md:px-4 md:py-3 px-3 py-2 text-black bg-white rounded-full font-InterExtraBold 5xl:text-3xl xxl:text-2xl lg:text-xl md:text-xl 3xs:text-base text-sm hover:scale-95 transition ease-out duration-300 lg:block hidden;
+}
+.cta-small {
+  @apply 5xl:px-14 5xl:py-6 xxl:px-8 xxl:py-5 lg:px-5 lg:py-4 md:px-4 md:py-3 px-3 py-2 text-white bg-black rounded-full font-InterExtraBold 5xl:text-3xl xxl:text-2xl lg:text-xl md:text-xl 3xs:text-base text-sm hover:scale-95 transition ease-out duration-300;
 }
 .logo {
   @apply relative 5xl:w-78 5xl:h-12 xxl:w-56 lg:w-40 md:w-42 w-32 h-10;
