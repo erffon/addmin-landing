@@ -2,7 +2,7 @@ import Header from "@/features/header";
 import style from "./Home.module.css";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FAQ } from "../features/faq/FAQ";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import Footer from "@/features/footer";
@@ -12,6 +12,9 @@ export default function Home() {
   const [toggles, setToggles] = useState([true, false, false]);
   const [mockupSrc, setMockupSrc] = useState("/asset/images/frame1.png");
   const [monthly, setMonthly] = useState(false);
+  const firstToggle = useRef<HTMLInputElement | null>(null);
+  const secondToggle = useRef<HTMLInputElement | null>(null);
+  const thirdToggle = useRef<HTMLInputElement | null>(null);
   const questionsItems = FAQ.map((item, idx) => {
     const onClick = () => {
       setShow((prev) => {
@@ -56,24 +59,32 @@ export default function Home() {
 
   const toggleHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.name === "first") {
-      e.target.checked = true;
+      secondToggle.current!.checked = false;
+      thirdToggle.current!.checked = false;
       let newToggles = toggles;
-      newToggles[0] = true;
+      newToggles = [true, false, false];
       setToggles(newToggles);
+      if (e.target.checked) {
+        setMockupSrc("/asset/images/frame1.png");
+      }
     } else if (e.target.name === "second") {
-      e.target.checked = true;
+      firstToggle.current!.checked = false;
+      thirdToggle.current!.checked = false;
       let newToggles = toggles;
-      newToggles[1] = true;
+      newToggles = [false, true, false];
       setToggles(newToggles);
-      setMockupSrc("/asset/images/frame2.png");
-      e.target.disabled = true;
+      if (e.target.checked) {
+        setMockupSrc("/asset/images/frame2.png");
+      }
     } else if (e.target.name === "third") {
-      e.target.checked = true;
+      secondToggle.current!.checked = false;
+      firstToggle.current!.checked = false;
       let newToggles = toggles;
-      newToggles[2] = true;
+      newToggles = [false, false, true];
       setToggles(newToggles);
-      setMockupSrc("/asset/images/frame3.png");
-      e.target.disabled = true;
+      if (e.target.checked) {
+        setMockupSrc("/asset/images/frame3.png");
+      }
     }
   };
 
@@ -184,6 +195,7 @@ export default function Home() {
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input
                     type="checkbox"
+                    ref={firstToggle}
                     value=""
                     className="sr-only peer"
                     name="first"
@@ -206,6 +218,7 @@ export default function Home() {
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input
                     type="checkbox"
+                    ref={secondToggle}
                     name="second"
                     value=""
                     className="sr-only peer"
@@ -227,6 +240,7 @@ export default function Home() {
                 {/* ----- toggle button  */}
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input
+                    ref={thirdToggle}
                     type="checkbox"
                     name="third"
                     value=""
