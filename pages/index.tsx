@@ -170,13 +170,13 @@ export default function Home() {
             <div className="relative 5xl:w-[42rem] xl:w-176 5xl:h-[62rem] xxl:h-192 xl:h-188 lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-10 xl:-mt-8 lg:-mt-5 lg:block hidden">
               <Image alt="phone demo" fill src={mockupSrc} />
             </div>
-            <div className="5xl:w-120 xxl:w-120 xl:w-112 lg:w-105 flex flex-col 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-3 md:px-20">
+            <div className="5xl:w-120 xxl:w-120 xl:w-112 lg:w-105 flex flex-col 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-8 md:px-20">
               {/* first toggle  */}
               <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[3rem]">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl text-2xl xxl:leading-10 xl:leading-7 5xl:leading-[3rem]">
                   add an admin passwordless
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl text-xl leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -195,10 +195,10 @@ export default function Home() {
               </div>
               {/* 2nd toggle  */}
               <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xl:leading-7 5xl:leading-[3.5rem]">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl text-2xl xl:leading-7 5xl:leading-[3.5rem]">
                   send & schedule posts
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl text-lg leading-5 5xl:leading-10 xl:leading-7 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl text-xl leading-5 5xl:leading-10 xl:leading-7 text-main-text_grey2">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -217,10 +217,10 @@ export default function Home() {
               </div>
               {/* 3rd toggle  */}
               <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl lg:text-2xl xl:leading-7 5xl:leading-[3.5rem]">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl text-2xl lg:text-2xl xl:leading-7 5xl:leading-[3.5rem]">
                   approve contents
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl lg:text-xl text-lg leading-5 5xl:leading-10 xl:leading-7 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl text-xl leading-5 5xl:leading-10 xl:leading-7 text-main-text_grey2">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -255,7 +255,7 @@ export default function Home() {
         {/* /* ------------------------------- 5th section ------------------------------ */}
         <section className="bg-white md:px-24 px-5 pt-25 5xl:pt-40 relative">
           {/* titles */}
-          <div className="lg:flex block justify-between items-start xxl:pb-48 xl:pb-36 lg:pb-28 pb-20">
+          <div className="lg:flex block justify-between items-start xxl:pb-48 xl:pb-36 lg:pb-28 pb-12">
             <div className={style["pricing-title"]}>
               <p className="text-black lg:leading-12 leading-10">
                 Keep your Account
