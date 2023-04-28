@@ -249,7 +249,7 @@ export default function Home() {
           <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl 5xl:mb-66 xxl:mb-56 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
             You may Asking
           </p>
-          <ul>{questionsItems}</ul>
+          <ul className="select-none">{questionsItems}</ul>
         </section>
         <span id="pricing" />
         {/* /* ------------------------------- 5th section ------------------------------ */}
