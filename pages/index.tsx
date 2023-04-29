@@ -91,7 +91,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="5xl:pt-62 xxl:pt-56 xl:pt-50 lg:pt-44 md:pt-35 pt-20 overflow-hidden">
+      <main className="xxl:pt-56 xl:pt-50 lg:pt-44 md:pt-35 pt-20 overflow-hidden">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
         <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse justify-between">
           <div className="xl:w-184 xxl:h-188 xl:h-172 lg:w-176 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
