@@ -303,21 +303,21 @@ export default function Home() {
           {!monthly && (
             <div className="5xl:pb-184 xxl:pb-156 xl:pb-132 lg:pb-100 md:pb-72 pb-60 lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xxl:mx-0 xl:-mx-10 lg:-mx-17">
               {/* first  */}
-              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
-                  <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl text-4.5xl">
+                  <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl md:text-4.5xl text-3xl">
                     Air Flow
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl text-2xl text-main-orange pt-7">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-main-orange pt-7">
                     10 content / month
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl text-2xl pb-6 mt-2">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl pb-6 mt-2">
                     Unlimited IG accounts <br />
                     Unlimited admins
                     <br /> Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4.5xl text-4.5xl text-main-orange">
+                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4.5xl md:text-4.5xl text-4xl text-main-orange">
                     Free
                   </p>
                 </div>
@@ -330,26 +330,26 @@ export default function Home() {
               <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-184 5xl:h-[52rem] xl:w-82 xl:h-172 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
-                  <p className="font-InterBold text-black 5xl:text-4xl xxl:text-2xl text-2xl -mt-4">
+                  <p className="font-InterBold text-black 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl -mt-4">
                     *Popular*{" "}
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl text-4xl text-black pt-7">
+                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl md:text-4.5xl text-3xl text-black pt-7">
                     Family Lunch
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl text-2xl text-main-orange 5xl:pt-7 xxl:pt-5 xl:pt-14 pt-10">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-main-orange 5xl:pt-7 xxl:pt-5 xl:pt-14 pt-10">
                     720 content / year
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl text-2xl text-black pb-5 mt-2">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-black pb-5 mt-2">
                     Unlimited IG accounts <br /> Unlimited admins <br />{" "}
                     Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-6xl xl:text-4.5xl text-4xl text-main-orange">
-                    <span className="line-through 5xl:text-4xl xxl:text-2xl text-3xl">
+                  <p className="font-InterExtraBold 5xl:text-6xl xl:text-4.5xl md:text-4.5xl text-3xl text-main-orange">
+                    <span className="line-through 5xl:text-4xl xxl:text-2xl md:text-3xl text-2xl">
                       25$/m
                     </span>{" "}
                     18$/m
                   </p>
-                  <p className="font-InterBold text-black pt-2 xl:text-lg lg:text-base text-lg">
+                  <p className="font-InterBold text-black pt-2 xl:text-lg lg:text-base md:text-lg text-base">
                     billed <span className="line-through">$300</span> $216/year
                   </p>
                 </div>
@@ -362,23 +362,23 @@ export default function Home() {
               <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
-                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl md:text-4xl text-3xl text-black">
+                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl md:text-4.5xl text-3xl text-black">
                     Cinema Ticket
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl text-2xl text-main-orange pt-7">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl md:text-2xl text-xl text-main-orange pt-7">
                     60 content / month
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl text-xl pb-5 text-black mt-2">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl md:text-2xl text-xl pb-5 text-black mt-2">
                     Unlimited IG accounts <br /> Unlimited admins <br />{" "}
                     Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl xl:text-4.5xl text-4xl text-main-orange">
-                    <span className="line-through 5xl:text-4xl text-3xl">
+                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl xl:text-4.5xl md:text-4.5xl text-3xl text-main-orange">
+                    <span className="line-through 5xl:text-4xl md:text-3xl text-2xl">
                       9$/m
                     </span>{" "}
                     7$/m
                   </p>
-                  <p className="font-InterBold text-black pt-1 xxl:text-lg xl:text-lg lg:text-base text-lg">
+                  <p className="font-InterBold text-black pt-1 xxl:text-lg xl:text-lg lg:text-base md:text-lg text-base">
                     billed <span className="line-through">$108</span> $84/year
                   </p>
                 </div>
@@ -392,21 +392,21 @@ export default function Home() {
           {monthly && (
             <div className="5xl:pb-184 xxl:pb-166 xl:pb-132 lg:pb-100 md:pb-72 pb-60 lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xxl:mx-0 xl:-mx-10 lg:-mx-17">
               {/* first  */}
-              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
-                  <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl text-4.5xl">
+                  <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl md:text-4.5xl text-3xl">
                     Air Flow
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl text-2xl text-main-orange pt-7">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-main-orange pt-7">
                     10 content / month
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl text-2xl pb-5 mt-2">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl pb-5 mt-2">
                     Unlimited IG accounts <br />
                     Unlimited admins
                     <br /> Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4.5xl text-4.5xl text-main-orange">
+                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4.5xl md:text-4.5xl text-4xl text-main-orange">
                     Free
                   </p>
                 </div>
@@ -419,20 +419,20 @@ export default function Home() {
               <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-184 5xl:h-[52rem] xl:w-82 xl:h-172 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
-                  <p className="font-InterBold text-black 5xl:text-4xl xxl:text-2xl text-2xl -mt-4">
+                  <p className="font-InterBold text-black 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl -mt-4">
                     *Popular*{" "}
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl text-4xl text-black pt-7">
+                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl md:text-4.5xl text-3xl text-black pt-7">
                     Family Lunch
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl text-2xl text-main-orange 5xl:pt-7 xxl:pt-5 xl:pt-14 pt-10">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-main-orange 5xl:pt-7 xxl:pt-5 xl:pt-14 pt-10">
                     60 content / month
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl text-2xl text-black pb-5 mt-2">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-black pb-5 mt-2">
                     Unlimited IG accounts <br /> Unlimited admins <br />{" "}
                     Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4.5xl text-4.5xl text-main-orange">
+                  <p className="font-InterExtraBold 5xl:text-6xl xl:text-4.5xl md:text-4.5xl text-3xl text-main-orange">
                     25$/m
                   </p>
                 </div>
@@ -442,20 +442,20 @@ export default function Home() {
                 </button>
               </div>
               {/* third  */}
-              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-start">
+              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-147 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
-                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl md:text-4xl text-3xl text-black">
+                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl md:text-4.5xl text-3xl text-black">
                     Cinema Ticket
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl text-2xl text-main-orange pt-7">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl md:text-2xl text-xl text-main-orange pt-7">
                     24 content / month
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl text-xl pb-5 text-black mt-2">
+                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl md:text-2xl text-xl pb-5 text-black mt-2">
                     Unlimited IG accounts <br /> Unlimited admins <br />{" "}
                     Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-4.5xl text-4xl text-main-orange">
+                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl xl:text-4.5xl md:text-4.5xl text-3xl text-main-orange">
                     7$/m
                   </p>
                 </div>
