@@ -170,24 +170,24 @@ export default function Home() {
         </section>
         <span id="services" />
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <section className="bg-white xl:pt-48 lg:pt-35 pt-25 xl:pb-50 lg:pb-35 md:px-22 px-17 pb-24 h-screen">
-          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center xl:mb-50 lg:mb-35 mb-20">
+        <section className="bg-white 5xl:pt-15 xl:pt-48 lg:pt-35 pt-25 xl:pb-50 lg:pb-35 md:px-22 px-17 pb-24 h-screen">
+          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center 5xl:mb-25 xl:mb-50 lg:mb-35 mb-20">
             Easily manage as a{" "}
-            <span className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-main-orange">
+            <span className="font-InterExtraBold 5xl:text-6xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-main-orange">
               Toggle!
             </span>
           </p>
-          <div className="xl:px-52 lg:px-32 flex justify-center">
-            <div className="relative 5xl:w-[42rem] xl:w-176 5xl:h-[62rem] xxl:h-192 xl:h-188 lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-10 xl:-mt-8 lg:-mt-5 lg:block hidden">
+          <div className="5xl:px-10 xl:px-52 lg:px-32 flex justify-center">
+            <div className="relative 5xl:w-[31rem] xl:w-176 5xl:h-[52rem] xxl:h-192 xl:h-188 lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-10 xl:-mt-8 lg:-mt-5 lg:block hidden">
               <Image alt="phone demo" fill src={mockupSrc} />
             </div>
-            <div className="5xl:w-120 xxl:w-120 xl:w-112 lg:w-105 flex flex-col 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-8 md:px-20">
+            <div className="5xl:w-[43rem] xxl:w-120 xl:w-112 lg:w-105 flex flex-col justify-center 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-8 md:px-20">
               {/* first toggle  */}
-              <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[3rem]">
+              <div className="flex flex-col 5xl:gap-2 xxl:gap-3 lg:gap-4 gap-2">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
                   add an admin passwordless
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
+                <p className="font-InterBold 5xl:text-2xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -202,15 +202,15 @@ export default function Home() {
                     defaultChecked={toggles[0] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-20 5xl:h-9 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
               {/* 2nd toggle  */}
               <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xl:leading-7 5xl:leading-[3.5rem]">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
                   send & schedule posts
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 5xl:leading-10 xl:leading-7 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-2xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -225,15 +225,15 @@ export default function Home() {
                     defaultChecked={toggles[1] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-20 5xl:h-9 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
               {/* 3rd toggle  */}
               <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4.5xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl lg:text-2xl xl:leading-7 5xl:leading-[3.5rem]">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
                   approve contents
                 </h3>
-                <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 5xl:leading-10 xl:leading-7 text-main-text_grey2">
+                <p className="font-InterBold 5xl:text-2xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -248,7 +248,7 @@ export default function Home() {
                     defaultChecked={toggles[2] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-20 5xl:h-9 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
             </div>
