@@ -2,7 +2,7 @@ import Header from "@/features/header";
 import style from "./Home.module.css";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { FAQ } from "../features/faq/FAQ";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import Footer from "@/features/footer";
@@ -91,9 +91,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="xxl:pt-56 xl:pt-50 lg:pt-44 md:pt-35 pt-20 overflow-hidden">
+      <main className="xxl:pt-20 xl:pt-50 lg:pt-44 md:pt-35 pt-20 overflow-hidden">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
-        <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse xxl:justify-center justify-between">
+        <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse xxl:justify-center justify-between h-screen -mt-28">
           <div className="xl:w-184 xxl:h-188 xl:h-172 lg:w-176 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
             <h2 className={style.tagline}>
               <span className={style["tagline-span"]}> add</span> an admin in a{" "}
@@ -121,7 +121,7 @@ export default function Home() {
           </div>
         </section>
         {/* /* ------------------------------- 2nd section ------------------------------  */}
-        <section className="5xl:mt-90 xxl:mt-78 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-92 lg:pb-82 pb-40">
+        <section className="5xl:mt-40 mb-40 xxl:mt-78 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-92 lg:pb-82 pb-40 h-screen">
           <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
             2,900,000
           </p>
@@ -136,7 +136,7 @@ export default function Home() {
             -- crunchbase 2020
           </p>
           {/* toggle button and motto */}
-          <div className="5xl:mt-108 xxl:mt-90 xl:mt-80 lg:mt-70 md:mt-60 mt-40 flex justify-center items-center xl:gap-9 lg:gap-6 md:gap-4 gap-2 -mx-28">
+          <div className="5xl:mt-70 xxl:mt-90 xl:mt-80 lg:mt-70 md:mt-60 mt-40 flex justify-center items-center xl:gap-9 lg:gap-6 md:gap-4 gap-2 -mx-28">
             <div className="relative 5xl:w-35 5xl:h-17 xxl:w-32 xxl:h-13 xl:w-25 xl:h-12 lg:w-20 lg:h-10 md:w-16 md:h-10 w-12 h-5">
               <Image
                 src="/asset/images/toggle-button.svg"
@@ -145,7 +145,7 @@ export default function Home() {
               />
             </div>
             {/* text animation  */}
-            <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5xl md:text-4.5xl text-xl">
+            <p className="font-InterExtraBold 5xl:text-7xl xxl:text-6xl xl:text-5.5xl lg:text-5xl md:text-4.5xl text-xl">
               <span>Don’t share your</span>{" "}
               <TypeAnimation
                 sequence={[
@@ -170,7 +170,7 @@ export default function Home() {
         </section>
         <span id="services" />
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <section className="bg-white xl:pt-48 lg:pt-35 pt-25 xl:pb-50 lg:pb-35 md:px-22 px-17 pb-24">
+        <section className="bg-white xl:pt-48 lg:pt-35 pt-25 xl:pb-50 lg:pb-35 md:px-22 px-17 pb-24 h-screen">
           <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center xl:mb-50 lg:mb-35 mb-20">
             Easily manage as a{" "}
             <span className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-main-orange">
