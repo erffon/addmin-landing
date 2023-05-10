@@ -256,20 +256,20 @@ export default function Home() {
         </section>
         <span id="faq" />
         {/* /* ------------------------------- 4th section ------------------------------  */}
-        <section className="xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 xxl:pb-70 xl:pb-62 lg:pb-50 md:pb-20 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
-          <p className="font-InterExtraBold xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
+        <section className="xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 5xl:pb-50 xxl:pb-70 xl:pb-62 lg:pb-50 md:pb-20 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
+          <p className="font-InterExtraBold xxl:text-6xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
             The Questions
           </p>
-          <p className="font-InterExtraBold xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl xxl:mb-46 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
+          <p className="font-InterExtraBold xxl:text-6xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl 5xl:mb-32 xxl:mb-46 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
             You may Asking
           </p>
           <ul className="select-none">{questionsItems}</ul>
         </section>
         <span id="pricing" />
         {/* /* ------------------------------- 5th section ------------------------------ */}
-        <section className="bg-white md:px-24 px-5 pt-25 5xl:pt-40 relative">
+        <section className="bg-white md:px-24 px-5 pt-25 relative h-screen">
           {/* titles */}
-          <div className="lg:flex block justify-between items-start xxl:pb-48 xl:pb-36 lg:pb-28 pb-12">
+          <div className="lg:flex block justify-between items-center">
             <div className={style["pricing-title"]}>
               <p className="text-black lg:leading-12 leading-10">
                 Keep your Account
@@ -279,7 +279,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex lg:gap-7 gap-3 justify-center items-center 5xl:pt-7 xxl:pt-2 xl:pt-1 lg:pt-0 pt-12">
-              <p className="text-black font-InterBold 5xl:text-5.5xl xxl:text-5xl xl:text-4.5xl md:text-3xl text-2xl">
+              <p className="text-black font-InterBold 5xl:text-5xl xxl:text-5xl xl:text-4.5xl md:text-3xl text-2xl">
                 Monthly
               </p>
               <label className="relative inline-flex items-center cursor-pointer">
@@ -292,18 +292,18 @@ export default function Home() {
                     setMonthly((prev) => !prev);
                   }}
                 />
-                <div className="5xl:w-28 5xl:h-13 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 md:w-20 md:h-8 w-17 h-7 5xl:after:h-11 5xl:after:w-11 xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 md:after:w-7 md:after:h-7 after:w-6 after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[5px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] md:after:left-[8px] md:after:top-[0.1rem] after:top-[0.1rem] after:left-[7px] after:bg-white after:border-main-button_grey after:border after:rounded-full after:transition-all peer-checked:bg-main-orange"></div>
+                <div className="5xl:w-20 5xl:h-9 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
               </label>
-              <p className="text-main-orange font-InterBold 5xl:text-5.5xl xxl:text-5xl xl:text-4.5xl md:text-3xl text-2xl">
+              <p className="text-main-orange font-InterBold 5xl:text-5xl xxl:text-5xl xl:text-4.5xl md:text-3xl text-2xl">
                 Yearly
               </p>
             </div>
           </div>
           {/* pricing */}
           {!monthly && (
-            <div className="5xl:pb-184 xxl:pb-156 xl:pb-132 lg:pb-100 md:pb-72 pb-60 lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xxl:mx-0 xl:-mx-10 lg:-mx-17">
+            <div className="relative lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xxl:mx-0 xl:-mx-10 lg:-mx-17">
               {/* first  */}
-              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-176 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-20 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-60 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-15 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
                   <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl md:text-4.5xl text-3xl">
@@ -466,9 +466,9 @@ export default function Home() {
               </div>
             </div>
           )}
-          <div className="absolute 5xl:w-[986px] 5xl:h-[579px] xxl:w-[900px] xxl:h-[500px] xl:w-[700px] xl:h-[420px] lg:w-[600px] lg:h-[360px] md:w-92 md:h-60 w-82 h-50 right-0 -bottom-4 md:-bottom-5 xl:-bottom-7 xxl:-bottom-9 5xl:-bottom-11">
+          {/* <div className="absolute 5xl:w-[986px] 5xl:h-[579px] xxl:w-[900px] xxl:h-[500px] xl:w-[700px] xl:h-[420px] lg:w-[600px] lg:h-[360px] md:w-92 md:h-60 w-82 h-50 right-0 -bottom-4 md:-bottom-5 xl:-bottom-7 xxl:-bottom-9 5xl:-bottom-11">
             <Image alt="vector" fill src="/asset/images/vector.svg" />
-          </div>
+          </div> */}
         </section>
         {/* /* --------------------------------- footer ---------------------------------  */}
         <Footer />

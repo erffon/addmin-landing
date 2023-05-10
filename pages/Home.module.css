@@ -65,5 +65,5 @@ input:checked + .toggle-bg {
   @apply xl:pb-20 pb-10 xl:leading-[3rem] md:leading-[2.2rem] leading-[1.5rem];
 }
 .pricing-title {
-  @apply 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5.5xl md:text-5.5xl text-4.5xl font-InterExtraBold lg:text-left text-center;
+  @apply 5xl:text-6xl xxl:text-6xl xl:text-5.5xl lg:text-5.5xl md:text-5.5xl text-4.5xl font-InterExtraBold lg:text-left text-center;
 }
