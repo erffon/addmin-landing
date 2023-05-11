@@ -121,11 +121,11 @@ export default function Home() {
           </div>
         </section>
         {/* /* ------------------------------- 2nd section ------------------------------  */}
-        <section className="5xl:mt-40 mb-40 xxl:mt-78 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-92 lg:pb-82 pb-40 h-screen">
-          <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
+        <section className="5xl:mt-40 mb-40 xxl:mt-50 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-92 lg:pb-82 pb-40 h-screen">
+          <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-6xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
             2,900,000
           </p>
-          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl">
+          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-6xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl">
             <span className="text-main-orange font-InterExtraBold 5xl:text-7.5xl xxl:7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl 4xs:text-2xl">
               Instagram Business Accounts
             </span>{" "}
@@ -170,24 +170,24 @@ export default function Home() {
         </section>
         <span id="services" />
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <section className="bg-white 5xl:pt-15 xl:pt-48 lg:pt-35 pt-25 xl:pb-50 lg:pb-35 md:px-22 px-17 pb-24 h-screen">
-          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-7xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center 5xl:mb-25 xl:mb-50 lg:mb-35 mb-20">
+        <section className="bg-white xl:pt-15 lg:pt-35 pt-25 xl:pb-50 lg:pb-35 md:px-22 px-17 pb-24 h-screen">
+          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center xxl:mb-24 xl:mb-50 lg:mb-35 mb-20">
             Easily manage as a{" "}
-            <span className="font-InterExtraBold 5xl:text-6xl xxl:text-7xl xl:text-6xl lg:text-5.5xl text-main-orange">
+            <span className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-6xl lg:text-5.5xl text-main-orange">
               Toggle!
             </span>
           </p>
-          <div className="5xl:px-10 xl:px-52 lg:px-32 flex justify-center">
-            <div className="relative 5xl:w-[31rem] xl:w-176 5xl:h-[52rem] xxl:h-192 xl:h-188 lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-10 xl:-mt-8 lg:-mt-5 lg:block hidden">
+          <div className="xxl:px-10 xl:px-52 lg:px-32 flex justify-center">
+            <div className="relative 5xl:w-[31rem] xxl:w-[30rem] xl:w-176 5xl:h-[52rem] xxl:h-192 xl:h-188 lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-5 xl:-mt-8 lg:-mt-5 lg:block hidden">
               <Image alt="phone demo" fill src={mockupSrc} />
             </div>
-            <div className="5xl:w-[43rem] xxl:w-120 xl:w-112 lg:w-105 flex flex-col justify-center 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-8 md:px-20">
+            <div className="5xl:w-[43rem] xxl:w-[38rem] xl:w-112 lg:w-105 flex flex-col justify-center 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-8 md:px-20">
               {/* first toggle  */}
               <div className="flex flex-col 5xl:gap-2 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-3xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
                   add an admin passwordless
                 </h3>
-                <p className="font-InterBold 5xl:text-2xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
+                <p className="font-InterBold xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
                   Never be afraid to give your Instagram account to a stranger
                   freelancer, or agency.{" "}
                 </p>
@@ -202,12 +202,12 @@ export default function Home() {
                     defaultChecked={toggles[0] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-20 5xl:h-9 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-20 5xl:h-9 xxl:w-[4.5rem] xxl:h-8 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-[1.6rem] xxl:after:h-[1.6rem] xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4px] xxl:after:left-[12px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
               {/* 2nd toggle  */}
               <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-3xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
                   send & schedule posts
                 </h3>
                 <p className="font-InterBold 5xl:text-2xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
@@ -225,12 +225,12 @@ export default function Home() {
                     defaultChecked={toggles[1] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-20 5xl:h-9 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-20 5xl:h-9 xxl:w-[4.5rem] xxl:h-8 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-[1.6rem] xxl:after:h-[1.6rem] xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4px] xxl:after:left-[12px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
               {/* 3rd toggle  */}
               <div className="flex flex-col 5xl:gap-5 xxl:gap-3 lg:gap-4 gap-2">
-                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-4xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
+                <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-3xl xl:text-3xl md:text-2xl text-xl xxl:leading-10 xl:leading-7 5xl:leading-[2.5rem]">
                   approve contents
                 </h3>
                 <p className="font-InterBold 5xl:text-2xl xxl:text-2xl xl:text-2xl md:text-xl text-lg leading-5 text-main-text_grey2 5xl:leading-10 xl:leading-7">
@@ -248,7 +248,7 @@ export default function Home() {
                     defaultChecked={toggles[2] ? true : false}
                     onChange={toggleHandler}
                   />
-                  <div className="5xl:w-20 5xl:h-9 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
+                  <div className="5xl:w-20 5xl:h-9 xxl:w-[4.5rem] xxl:h-8 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-[1.6rem] xxl:after:h-[1.6rem] xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4px] xxl:after:left-[12px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
                 </label>
               </div>
             </div>
@@ -256,30 +256,30 @@ export default function Home() {
         </section>
         <span id="faq" />
         {/* /* ------------------------------- 4th section ------------------------------  */}
-        <section className="xxl:pt-56 xl:pt-46 lg:pt-32 pt-44 5xl:pb-50 xxl:pb-70 xl:pb-62 lg:pb-50 md:pb-20 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
-          <p className="font-InterExtraBold xxl:text-6xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
+        <section className="5xl:pt-46 xxl:pt-36 xl:pt-46 lg:pt-32 pt-44 5xl:pb-50 xxl:pb-44 xl:pb-62 lg:pb-50 md:pb-20 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
+          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
             The Questions
           </p>
-          <p className="font-InterExtraBold xxl:text-6xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl 5xl:mb-32 xxl:mb-46 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
+          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-6xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl 5xl:mb-32 xxl:mb-28 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
             You may Asking
           </p>
           <ul className="select-none">{questionsItems}</ul>
         </section>
         <span id="pricing" />
         {/* /* ------------------------------- 5th section ------------------------------ */}
-        <section className="bg-white md:px-24 px-5 pt-15 relative h-screen">
+        <section className="bg-white md:px-24 px-5 pt-20 relative h-screen">
           {/* titles */}
-          <div className="lg:flex block justify-between items-center">
+          <div className="lg:flex block justify-between items-center 5xl:pb-12 xxl:pb-17">
             <div className={style["pricing-title"]}>
-              <p className="text-black lg:leading-12 leading-10">
+              <p className="text-black xxl:leading-9 lg:leading-12 leading-10">
                 Keep your Account
               </p>
               <p className="text-main-orange 5xl:mt-5 xxl:mt-3 lg:-mt-5 md:-mt-0 3xs:-mt-1">
                 Insured
               </p>
             </div>
-            <div className="flex lg:gap-7 gap-3 justify-center items-center 5xl:-mt-15 lg:pt-0 pt-12">
-              <p className="text-black font-InterBold 5xl:text-5xl xxl:text-5xl xl:text-4.5xl md:text-3xl text-2xl">
+            <div className="flex lg:gap-7 gap-3 justify-center items-center 5xl:-mt-15 xxl:-mt-17 lg:pt-0 pt-12">
+              <p className="text-black font-InterBold xxl:text-4.5xl xl:text-4.5xl md:text-3xl text-2xl">
                 Monthly
               </p>
               <label className="relative inline-flex items-center cursor-pointer">
@@ -292,9 +292,9 @@ export default function Home() {
                     setMonthly((prev) => !prev);
                   }}
                 />
-                <div className="5xl:w-20 5xl:h-9 xxl:w-22 xxl:h-10 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-8 xxl:after:h-8 xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4.5px] xxl:after:left-[10px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
+                <div className="5xl:w-20 5xl:h-9 xxl:w-[4.5rem] xxl:h-8 xl:w-17 xl:h-8 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-[1.6rem] xxl:after:h-[1.6rem] xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4px] xxl:after:left-[12px] xl:after:top-[3.5px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
               </label>
-              <p className="text-main-orange font-InterBold 5xl:text-5xl xxl:text-5xl xl:text-4.5xl md:text-3xl text-2xl">
+              <p className="text-main-orange font-InterBold xxl:text-4.5xl xl:text-4.5xl md:text-3xl text-2xl">
                 Yearly
               </p>
             </div>
@@ -303,21 +303,21 @@ export default function Home() {
           {!monthly && (
             <div className="relative lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xxl:mx-0 xl:-mx-10 lg:-mx-17">
               {/* first  */}
-              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-166 xxl:h-166 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-24 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-[40.5rem] xxl:h-147 xl:w-92 xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
                   <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl md:text-4.5xl text-3xl">
                     Air Flow
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-main-orange pt-7">
+                  <p className="font-InterBold 5xl:text-3xl xxl:text-2xl md:text-2xl text-xl text-main-orange pt-7">
                     10 content / month
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl pb-6 mt-2">
+                  <p className="font-InterBold 5xl:text-3xl xxl:text-2xl md:text-2xl text-xl pb-6 mt-2">
                     Unlimited IG accounts <br />
                     Unlimited admins
                     <br /> Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4.5xl md:text-4.5xl text-4xl text-main-orange">
+                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4.5xl md:text-4.5xl text-4xl text-main-orange 5xl:pt-5">
                     Free
                   </p>
                 </div>
@@ -327,24 +327,24 @@ export default function Home() {
                 </button>
               </div>
               {/* second */}
-              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-184 5xl:h-192 xl:w-82 xl:h-172 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-134 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 md:pt-20 pt-24 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-[42.5rem] 5xl:h-[48.5rem] xl:w-82 xl:h-172 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-134 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 md:pt-20 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
                   <p className="font-InterBold text-black 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl -mt-4">
                     *Popular*{" "}
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl md:text-4.5xl text-3xl text-black pt-7">
+                  <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4xl md:text-4.5xl text-3xl text-black pt-7">
                     Family Lunch
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-main-orange 5xl:pt-7 xxl:pt-5 xl:pt-14 pt-10">
+                  <p className="font-InterBold 5xl:text-3xl xxl:text-2xl md:text-2xl text-xl text-main-orange 5xl:pt-7 xxl:pt-5 xl:pt-14 pt-10">
                     720 content / year
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl text-black pb-5 mt-2">
+                  <p className="font-InterBold 5xl:text-3xl xxl:text-2xl md:text-2xl text-xl text-black pb-5 mt-2">
                     Unlimited IG accounts <br /> Unlimited admins <br />{" "}
                     Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-6xl xl:text-4.5xl md:text-4.5xl text-3xl text-main-orange">
-                    <span className="line-through 5xl:text-4xl xxl:text-2xl md:text-3xl text-2xl">
+                  <p className="font-InterExtraBold 5xl:text-5xl xl:text-4.5xl md:text-4.5xl text-3xl text-main-orange 5xl:pt-5">
+                    <span className="line-through 5xl:text-3xl xxl:text-2xl md:text-3xl text-2xl">
                       25$/m
                     </span>{" "}
                     18$/m
@@ -359,21 +359,21 @@ export default function Home() {
                 </button>
               </div>
               {/* third  */}
-              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-184 5xl:h-166 xl:w-82 xl:h-172 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-134 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 md:pt-20 pt-24 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-147 5xl:h-166 xl:w-82 xl:h-172 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-134 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 md:pt-20 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
-                  <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4xl md:text-4.5xl text-3xl text-black">
+                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4xl md:text-4.5xl text-3xl text-black">
                     Cinema Ticket
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl md:text-2xl text-xl text-main-orange pt-7">
+                  <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl md:text-2xl text-xl text-main-orange pt-7">
                     60 content / month
                   </p>
-                  <p className="font-InterBold 5xl:text-4xl xxl:text-2xl xl:text-2xl md:text-2xl text-xl pb-5 text-black mt-2">
+                  <p className="font-InterBold 5xl:text-3xl xxl:text-2xl xl:text-2xl md:text-2xl text-xl pb-5 text-black mt-2">
                     Unlimited IG accounts <br /> Unlimited admins <br />{" "}
                     Unlimited role access
                   </p>
-                  <p className="font-InterExtraBold 5xl:text-6xl xxl:text-4xl xl:text-4.5xl md:text-4.5xl text-3xl text-main-orange">
-                    <span className="line-through 5xl:text-4xl md:text-3xl text-2xl">
+                  <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4xl xl:text-4.5xl md:text-4.5xl text-3xl text-main-orange 5xl:pt-5">
+                    <span className="line-through 5xl:text-3xl xxl:text-2xl md:text-3xl text-2xl">
                       9$/m
                     </span>{" "}
                     7$/m
@@ -467,11 +467,11 @@ export default function Home() {
             </div>
           )}
         </section>
-        <div className="bg-white h-156 relative">
+        {/* <div className="bg-white h-156 relative">
           <div className="absolute 5xl:w-[986px] 5xl:h-[579px] xxl:w-[900px] xxl:h-[500px] xl:w-[700px] xl:h-[420px] lg:w-[600px] lg:h-[360px] md:w-92 md:h-60 w-82 h-50 right-0 -bottom-4 md:-bottom-5 xl:-bottom-7 xxl:-bottom-9 5xl:-bottom-11">
             <Image alt="vector" fill src="/asset/images/vector.svg" />
           </div>
-        </div>
+        </div> */}
         {/* /* --------------------------------- footer ---------------------------------  */}
         <Footer />
       </main>
