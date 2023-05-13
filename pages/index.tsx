@@ -91,15 +91,15 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="xxl:pt-20 xl:pt-0 lg:pt-44 md:pt-35 pt-20 overflow-hidden">
+      <main className="xxl:pt-20 xl:pt-0 xl:mt-0 lg:-mt-60 md:pt-35 pt-20 overflow-hidden">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
         <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse xxl:justify-center justify-between lg:h-screen xxl:-mt-28 xl:-mt-15">
-          <div className="xl:w-184 xxl:h-188 xl:h-172 lg:w-176 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
+          <div className="xl:w-184 xxl:h-188 xl:h-172 lg:w-172 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
             <h2 className={style.tagline}>
               <span className={style["tagline-span"]}> add</span> an admin in a{" "}
               <span className={style["tagline-span"]}>min!</span>
             </h2>
-            <div className="font-InterBold xxl:text-4.5xl xl:text-3xl md:text-3xl text-base lg:my-0 md:my-13 my-10 lg:px-0 md:px-25 lg:text-left text-center">
+            <div className="font-InterBold xxl:text-4.5xl xl:text-3xl lg:text-2xl md:text-3xl text-base lg:my-0 md:my-13 my-10 lg:px-0 md:px-25 lg:text-left text-center">
               <p>Don’t Share the Password!</p>
               <p className="5xl:mt-6 xxl:mt-4 xl:mt-3">
                 Access & Permitting Admins
@@ -121,23 +121,23 @@ export default function Home() {
           </div>
         </section>
         {/* /* ------------------------------- 2nd section ------------------------------  */}
-        <section className="5xl:mt-40 xxl:mb-40 xl:mb-0 xxl:mt-50 xl:mt-15 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-0 lg:pb-82 pb-40 lg:h-screen">
-          <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
+        <section className="5xl:mt-40 xxl:mb-40 xl:mb-0 lg:-mb-40 xxl:mt-50 xl:mt-15 lg:mt-6 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-0 lg:pb-0 pb-40 lg:h-screen">
+          <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
             2,900,000
           </p>
-          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5.5xl md:text-5xl 3xs:text-3xl">
-            <span className="text-main-orange font-InterExtraBold 5xl:text-7.5xl xxl:7xl xl:text-5.5xl lg:text-5.5xl md:text-5xl 3xs:text-3xl 4xs:text-2xl">
+          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5xl md:text-5xl 3xs:text-3xl">
+            <span className="text-main-orange font-InterExtraBold 5xl:text-7.5xl xxl:7xl xl:text-5.5xl lg:text-5xl md:text-5xl 3xs:text-3xl 4xs:text-2xl">
               Instagram Business Accounts
             </span>{" "}
             Disappeared Just By Sharing the Password and being Granted Full
             Access by someone else!
           </p>
-          <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl 3xs:text-lg 4xs:text-base xxl:mt-15 xl:mt-10 md:mt-17 mt-10">
+          <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl 3xs:text-lg 4xs:text-base xxl:mt-15 xl:mt-10 lg:mt-12 md:mt-17 mt-10">
             -- crunchbase 2020
           </p>
           {/* toggle button and motto */}
           <div className="5xl:mt-70 xxl:mt-90 xl:mt-80 lg:mt-70 md:mt-60 mt-40 flex justify-center items-center xl:gap-9 lg:gap-6 md:gap-4 gap-2 -mx-28">
-            <div className="relative 5xl:w-35 5xl:h-17 xxl:w-32 xxl:h-13 xl:w-25 xl:h-12 lg:w-20 lg:h-10 md:w-16 md:h-10 w-12 h-5">
+            <div className="relative 5xl:w-35 5xl:h-17 xxl:w-32 xxl:h-13 xl:w-20 xl:h-10 lg:w-17 lg:h-10 md:w-16 md:h-10 w-12 h-5">
               <Image
                 src="/asset/images/toggle-button.svg"
                 fill
@@ -145,7 +145,7 @@ export default function Home() {
               />
             </div>
             {/* text animation  */}
-            <p className="font-InterExtraBold 5xl:text-7xl xxl:text-6xl xl:text-4.5xl lg:text-5xl md:text-4.5xl text-xl">
+            <p className="font-InterExtraBold 5xl:text-7xl xxl:text-6xl xl:text-4.5xl lg:text-4.5xl md:text-4.5xl text-xl">
               <span>Don’t share your</span>{" "}
               <TypeAnimation
                 sequence={[
@@ -170,18 +170,18 @@ export default function Home() {
         </section>
         <span id="services" />
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <section className="bg-white xl:pt-24 lg:pt-35 pt-25 xl:pb-50 lg:pb-35 md:px-22 px-17 pb-24 lg:h-screen">
-          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-5.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center xxl:mb-24 xl:mb-20 lg:mb-35 mb-20">
+        <section className="bg-white lg:pt-22 pt-25 xl:pb-50 lg:pb-35 xl:px-22 lg:px-10 md:px-22 px-17 pb-24 lg:h-screen">
+          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-4.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center 5xl:mb-12 xxl:mb-15 mb-20">
             Easily manage as a{" "}
-            <span className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-5.5xl text-main-orange">
+            <span className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-4.5xl text-main-orange">
               Toggle!
             </span>
           </p>
-          <div className="xxl:px-10 xl:px-10 lg:px-32 flex justify-center">
-            <div className="relative 5xl:w-[31rem] xxl:w-[30rem] xl:w-[28rem] 5xl:h-[52rem] xxl:h-192 xl:h-[47rem] lg:w-176 lg:h-186 5xl:-mt-5 xxl:-mt-5 xl:-mt-0 lg:-mt-5 lg:block hidden">
+          <div className="xxl:px-10 xl:px-10 lg:px-10 flex justify-center">
+            <div className="relative 5xl:w-[31rem] xxl:w-[30rem] xl:w-[28rem] 5xl:h-[52rem] xxl:h-192 xl:h-[47rem] lg:w-[42rem] lg:h-[48rem] 5xl:-mt-5 xxl:-mt-5 lg:-mt-0 lg:block hidden">
               <Image alt="phone demo" fill src={mockupSrc} />
             </div>
-            <div className="5xl:w-[43rem] xxl:w-[38rem] xl:w-[35rem] lg:w-105 flex flex-col justify-center 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-8 md:px-20">
+            <div className="5xl:w-[43rem] xxl:w-[38rem] xl:w-[35rem] lg:w-[38rem] flex flex-col justify-center 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-8 xl:px-10 lg:px-0 md:px-20">
               {/* first toggle  */}
               <div className="flex flex-col 5xl:gap-2 xxl:gap-3 lg:gap-4 gap-2">
                 <h3 className="font-InterExtraBold text-black 5xl:text-4xl xxl:text-3xl xl:text-2.5xl md:text-2xl text-xl xxl:leading-10 xl:leading-9 5xl:leading-[2.5rem]">
@@ -256,30 +256,33 @@ export default function Home() {
         </section>
         <span id="faq" />
         {/* /* ------------------------------- 4th section ------------------------------  */}
-        <section className="5xl:pt-46 xxl:pt-36 xl:pt-24 lg:pt-32 pt-44 5xl:pb-50 xxl:pb-44 xl:pb-32 lg:pb-50 md:pb-20 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
-          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl text-main-orange">
+        <section className="5xl:pt-46 xxl:pt-36 xl:pt-24 lg:pt-20 md:pt-20 pt-44 5xl:pb-50 xxl:pb-44 xl:pb-32 lg:pb-20 md:pb-20 pb-32 xxl:px-35 xl:px-32 lg:px-28 md:px-22 px-10">
+          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-4.5xl md:text-4.5xl 3xs:text-4.5xl text-3xl text-main-orange">
             The Questions
           </p>
-          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-5.5xl md:text-5xl 3xs:text-4.5xl text-3xl 5xl:mb-32 xxl:mb-28 xl:mb-24 lg:mb-50 md:mb-35 4xs:mb-32 mb-28 mt-2">
+          <p
+            className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-4.5xl md:text-4
+          5xl 3xs:text-4.5xl text-3xl 5xl:mb-32 xxl:mb-28 lg:mb-24 md:mb-20 4xs:mb-32 mb-28 mt-2"
+          >
             You may Asking
           </p>
           <ul className="select-none">{questionsItems}</ul>
         </section>
         <span id="pricing" />
         {/* /* ------------------------------- 5th section ------------------------------ */}
-        <section className="bg-white md:px-24 px-5 pt-20 relative lg:h-screen">
+        <section className="bg-white md:px-24 px-5 pt-20 relative lg:h-screen pb-15">
           {/* titles */}
-          <div className="lg:flex block justify-between items-center 5xl:pb-12 xxl:pb-17 xl:pb-15">
+          <div className="lg:flex block justify-between items-center 5xl:pb-12 xxl:pb-17 xl:pb-15 lg:pb-24">
             <div className={style["pricing-title"]}>
-              <p className="text-black xxl:leading-9 xl:leading-[6rem] lg:leading-12 leading-10">
+              <p className="text-black xxl:leading-9 xl:leading-[6rem] lg:leading-12 leading-[3rem]">
                 Keep your Account
               </p>
-              <p className="text-main-orange 5xl:mt-5 xxl:mt-3 lg:-mt-5 md:-mt-0 3xs:-mt-1">
+              <p className="text-main-orange 5xl:mt-5 xxl:mt-3 lg:-mt-4 md:-mt-0 3xs:-mt-1">
                 Insured
               </p>
             </div>
-            <div className="flex lg:gap-7 gap-3 justify-center items-center 5xl:-mt-15 xxl:-mt-17 xl:-mt-7 lg:pt-0 pt-12">
-              <p className="text-black font-InterBold xxl:text-4.5xl xl:text-3xl md:text-3xl text-2xl">
+            <div className="flex lg:gap-5 gap-3 justify-center items-center 5xl:-mt-15 xxl:-mt-17 xl:-mt-7 lg:-mt-9 lg:pt-0 pt-12 lg:pb-0 pb-8">
+              <p className="text-black font-InterBold xxl:text-4.5xl xl:text-3xl lg:text-2xl text-2xl">
                 Monthly
               </p>
               <label className="relative inline-flex items-center cursor-pointer">
@@ -292,9 +295,9 @@ export default function Home() {
                     setMonthly((prev) => !prev);
                   }}
                 />
-                <div className="5xl:w-20 5xl:h-9 xxl:w-[4.5rem] xxl:h-8 xl:w-15 xl:h-7 lg:w-16 lg:h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-[1.6rem] xxl:after:h-[1.6rem] xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4px] xxl:after:left-[12px] xl:after:top-[2px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
+                <div className="5xl:w-20 5xl:h-9 xxl:w-[4.5rem] xxl:h-8 xl:w-15 xl:h-7 lg:w-16 lg:h-7 w-16 h-7 5xl:after:h-[1.8rem] 5xl:after:w-[1.8rem] xxl:after:w-[1.6rem] xxl:after:h-[1.6rem] xl:after:w-6 xl:after:h-6 lg:after:w-6 lg:after:h-6 after:w-6 after:h-6 bg-main-button_grey peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 5xl:after:top-[4px] 5xl:after:left-[10px] xxl:after:top-[4px] xxl:after:left-[12px] xl:after:top-[2px] xl:after:left-[5px] lg:after:top-[1.8px] lg:after:left-[5px] after:left-2 after:top-[0.1rem] after:bg-white after:border-main-button_grey after:border after:rounded-full  after:transition-all peer-checked:bg-main-orange"></div>
               </label>
-              <p className="text-main-orange font-InterBold xxl:text-4.5xl xl:text-3xl md:text-3xl text-2xl">
+              <p className="text-main-orange font-InterBold xxl:text-4.5xl xl:text-3xl lg:text-2xl text-2xl">
                 Yearly
               </p>
             </div>
@@ -303,7 +306,7 @@ export default function Home() {
           {!monthly && (
             <div className="relative lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xl:mx-0 lg:-mx-17">
               {/* first  */}
-              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-[40.5rem] xxl:h-147 xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-136 md:w-120 md:h-140 w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 pt-24 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-[40.5rem] xxl:h-147 xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-[37.5rem] md:w-[25rem] md:h-[34rem] w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-1 lg:pt-24 md:pt-15 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
                   <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl md:text-4.5xl text-3xl">
@@ -327,7 +330,7 @@ export default function Home() {
                 </button>
               </div>
               {/* second */}
-              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-[42.5rem] 5xl:h-[48.5rem] xl:w-[21.5rem] xl:h-172 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-134 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 md:pt-20 pt-24 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-[42.5rem] 5xl:h-[48.5rem] xl:w-[21.5rem] xl:h-172 lg:w-76 lg:h-[43rem] md:w-[25rem] md:h-[36rem] w-80 h-[35rem] lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 md:pt-16 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
                   <p className="font-InterBold text-black 5xl:text-4xl xxl:text-2xl md:text-2xl text-xl -mt-4">
@@ -359,7 +362,7 @@ export default function Home() {
                 </button>
               </div>
               {/* third  */}
-              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-147 5xl:h-166 xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-[40rem] md:w-120 md:h-140 w-80 h-134 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 md:pt-20 pt-24 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-white border-4 border-black 5xl:w-134 xxl:w-100 xxl:h-147 5xl:h-166 xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-[37.5rem] md:w-[25rem] md:h-[34rem] w-80 h-134 lg:mt-0 mt-5 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-10 md:pt-15 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
                   <p className="font-InterExtraBold 5xl:text-5xl xxl:text-4xl md:text-4.5xl text-3xl text-black">
@@ -467,11 +470,11 @@ export default function Home() {
             </div>
           )}
         </section>
-        {/* <div className="bg-white h-156 relative">
+        <div className="bg-white 5xl:h-156 xxl:h-[25rem] xl:h-[20rem] lg:h-[18rem] md:h-[15rem] h-[10rem] relative">
           <div className="absolute 5xl:w-[986px] 5xl:h-[579px] xxl:w-[900px] xxl:h-[500px] xl:w-[700px] xl:h-[420px] lg:w-[600px] lg:h-[360px] md:w-92 md:h-60 w-82 h-50 right-0 -bottom-4 md:-bottom-5 xl:-bottom-7 xxl:-bottom-9 5xl:-bottom-11">
             <Image alt="vector" fill src="/asset/images/vector.svg" />
           </div>
-        </div> */}
+        </div>
         {/* /* --------------------------------- footer ---------------------------------  */}
         <Footer />
       </main>
