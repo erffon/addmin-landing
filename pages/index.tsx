@@ -91,9 +91,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="xxl:pt-20 xl:pt-0 xl:mt-0 lg:-mt-60 md:pt-35 pt-20 overflow-hidden">
+      <main className="xxl:pt-20 xl:pt-0 1.5xl:pt-36 xl:mt-0 lg:-mt-60 md:pt-35 pt-20 overflow-hidden">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
-        <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse xxl:justify-center justify-between lg:h-screen xxl:-mt-28 xl:-mt-15">
+        <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse xxl:justify-center justify-between lg:h-screen xxl:-mt-32 1.5xl:-mt-25 xl:-mt-15">
           <div className="xl:w-184 xxl:h-188 xl:h-172 lg:w-172 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
             <h2 className={style.tagline}>
               <span className={style["tagline-span"]}> add</span> an admin in a{" "}

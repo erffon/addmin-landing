@@ -16,7 +16,7 @@ const Header = () => {
         />
         <link rel="shortcut icon" href="/favicon2.ico" />
       </Head>
-      <header className="lg:px-22 md:px-15 px-5 5xl:pt-7 xxl:pt-20 xl:pt-12 md:pt-24 pt-13 flex items-center justify-between">
+      <header className="lg:px-22 md:px-15 px-5 5xl:pt-7 xxl:pt-20 1.5xl:pt-10 xl:pt-12 md:pt-24 pt-13 flex items-center justify-between">
         <div className={style.logo}>
           <a href="/">
             <Image src="./asset/images/logo.svg" fill alt="addmin logo" />
