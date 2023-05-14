@@ -93,15 +93,15 @@ export default function Home() {
       <Header />
       <main className="xxl:pt-20 xl:pt-0 1.5xl:pt-36 xl:mt-0 lg:-mt-60 md:pt-35 pt-20 overflow-hidden">
         {/* /* ------------------------------ Hero Section ------------------------------  */}
-        <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse xxl:justify-center justify-between lg:h-screen xxl:-mt-32 1.5xl:-mt-25 xl:-mt-15">
-          <div className="xl:w-184 xxl:h-188 xl:h-172 lg:w-172 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
+        <section className="5xl:px-25 xl:px-22 px-17 lg:flex lg:flex-row items-center flex flex-col-reverse xxl:justify-center justify-between lg:h-screen xxl:-mt-32 1.5xl:-mt-44 xl:-mt-15">
+          <div className="xl:w-184 xxl:h-188 1.5xl:w-[48rem] 1.5xl:h-[36rem] xl:h-172 lg:w-172 lg:h-134 h-auto lg:mt-0 md:mt-20 mt-15 flex-col flex justify-between">
             <h2 className={style.tagline}>
               <span className={style["tagline-span"]}> add</span> an admin in a{" "}
               <span className={style["tagline-span"]}>min!</span>
             </h2>
-            <div className="font-InterBold xxl:text-4.5xl xl:text-3xl lg:text-2xl md:text-3xl text-base lg:my-0 md:my-13 my-10 lg:px-0 md:px-25 lg:text-left text-center">
+            <div className="font-InterBold xxl:text-4.5xl 1.5xl:text-2.5xl xl:text-3xl lg:text-2xl md:text-3xl text-base lg:my-0 md:my-13 my-10 lg:px-0 md:px-25 lg:text-left text-center xxl:mt-0">
               <p>Don’t Share the Password!</p>
-              <p className="5xl:mt-6 xxl:mt-4 xl:mt-3">
+              <p className="5xl:mt-6 xxl:mt-4 xl:mt-3 1.5xl:mt-2">
                 Access & Permitting Admins
               </p>
             </div>
@@ -121,23 +121,23 @@ export default function Home() {
           </div>
         </section>
         {/* /* ------------------------------- 2nd section ------------------------------  */}
-        <section className="5xl:mt-40 xxl:mb-40 xl:mb-0 lg:-mb-40 xxl:mt-50 xl:mt-15 lg:mt-6 md:mt-60 mt-36 lg:px-36 md:px-28 px-10 xl:pb-0 lg:pb-0 pb-40 lg:h-screen">
-          <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
+        <section className="5xl:mt-40 xxl:mb-40 1.5xl:mb-0 xl:mb-0 lg:-mb-40 xxl:mt-50 xl:mt-15 lg:mt-6 md:mt-60 mt-36 1.5xl:px-82 lg:px-36 md:px-28 px-10 1.5xl:pb-0 xl:pb-0 lg:pb-0 pb-40 lg:h-screen">
+          <p className="text-main-orange font-InterBlack 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl 1.5xl:text-5xl lg:text-5xl md:text-5xl 3xs:text-3xl text-2xl 5xl:mb-0 xxl:mb-2">
             2,900,000
           </p>
-          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5xl md:text-5xl 3xs:text-3xl">
+          <p className="font-InterExtraBold 5xl:text-7.5xl xxl:text-6xl xl:text-5.5xl lg:text-5xl md:text-5xl 3xs:text-3xl 1.5xl:text-5xl">
             <span className="text-main-orange font-InterExtraBold 5xl:text-7.5xl xxl:7xl xl:text-5.5xl lg:text-5xl md:text-5xl 3xs:text-3xl 4xs:text-2xl">
               Instagram Business Accounts
             </span>{" "}
             Disappeared Just By Sharing the Password and being Granted Full
             Access by someone else!
           </p>
-          <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-5xl xl:text-4xl lg:text-2xl md:text-2xl 3xs:text-lg 4xs:text-base xxl:mt-15 xl:mt-10 lg:mt-12 md:mt-17 mt-10">
+          <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-5xl xl:text-4xl 1.5xl:text-2xl lg:text-2xl md:text-2xl 3xs:text-lg 4xs:text-base xxl:mt-15 xl:mt-10 lg:mt-12 md:mt-17 mt-10">
             -- crunchbase 2020
           </p>
           {/* toggle button and motto */}
-          <div className="5xl:mt-70 xxl:mt-90 xl:mt-80 lg:mt-70 md:mt-60 mt-40 flex justify-center items-center xl:gap-9 lg:gap-6 md:gap-4 gap-2 -mx-28">
-            <div className="relative 5xl:w-35 5xl:h-17 xxl:w-32 xxl:h-13 xl:w-20 xl:h-10 lg:w-17 lg:h-10 md:w-16 md:h-10 w-12 h-5">
+          <div className="5xl:mt-70 xxl:mt-90 1.5xl:mt-60 xl:mt-80 lg:mt-70 md:mt-60 mt-40 flex justify-center items-center xl:gap-9 lg:gap-6 md:gap-4 gap-2 -mx-28">
+            <div className="relative 5xl:w-35 5xl:h-17 xxl:w-32 xxl:h-13 1.5xl:w-17 xl:w-20 xl:h-10 lg:w-17 lg:h-10 md:w-16 md:h-10 w-12 h-5">
               <Image
                 src="/asset/images/toggle-button.svg"
                 fill
@@ -145,7 +145,7 @@ export default function Home() {
               />
             </div>
             {/* text animation  */}
-            <p className="font-InterExtraBold 5xl:text-7xl xxl:text-6xl xl:text-4.5xl lg:text-4.5xl md:text-4.5xl text-xl">
+            <p className="font-InterExtraBold 5xl:text-7xl xxl:text-6xl 1.5xl:text-4.5xl xl:text-4.5xl lg:text-4.5xl md:text-4.5xl text-xl">
               <span>Don’t share your</span>{" "}
               <TypeAnimation
                 sequence={[
@@ -170,15 +170,15 @@ export default function Home() {
         </section>
         <span id="services" />
         {/* /* ------------------------------- 3rd section ------------------------------  */}
-        <section className="bg-white lg:pt-22 pt-25 xl:pb-50 lg:pb-35 xl:px-22 lg:px-10 md:px-22 px-17 pb-24 lg:h-screen">
-          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-4.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center 5xl:mb-12 xxl:mb-15 mb-20">
+        <section className="bg-white lg:pt-22 pt-25 1.5xl:pt-15 xl:pb-50 lg:pb-35 xl:px-22 lg:px-10 md:px-22 px-17 pb-24 lg:h-screen">
+          <p className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl 1.5xl:text-5xl xl:text-5xl lg:text-4.5xl md:text-5xl 3xs:text-3xl text-2xl text-black text-center 5xl:mb-12 xxl:mb-15 mb-20">
             Easily manage as a{" "}
             <span className="font-InterExtraBold 5xl:text-6xl xxl:text-5.5xl xl:text-5xl lg:text-4.5xl text-main-orange">
               Toggle!
             </span>
           </p>
           <div className="xxl:px-10 xl:px-10 lg:px-10 flex justify-center">
-            <div className="relative 5xl:w-[31rem] xxl:w-[30rem] xl:w-[28rem] 5xl:h-[52rem] xxl:h-192 xl:h-[47rem] lg:w-[42rem] lg:h-[48rem] 5xl:-mt-5 xxl:-mt-5 lg:-mt-0 lg:block hidden">
+            <div className="relative 5xl:w-[31rem] xxl:w-[30rem] xl:w-[28rem] 5xl:h-[52rem] xxl:h-192 1.5xl:h-[40rem] 1.5xl:w-[25rem] xl:h-[47rem] lg:w-[42rem] lg:h-[48rem] 5xl:-mt-5 xxl:-mt-5 lg:-mt-0 lg:block hidden">
               <Image alt="phone demo" fill src={mockupSrc} />
             </div>
             <div className="5xl:w-[43rem] xxl:w-[38rem] xl:w-[35rem] lg:w-[38rem] flex flex-col justify-center 5xl:gap-12 xxl:gap-10 lg:gap-8 gap-8 xl:px-10 lg:px-0 md:px-20">
@@ -304,9 +304,9 @@ export default function Home() {
           </div>
           {/* pricing */}
           {!monthly && (
-            <div className="relative lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xl:mx-0 lg:-mx-17">
+            <div className="relative lg:flex lg:flex-row 1.5xl:justify-evenly lg:justify-between lg:items-end flex flex-col items-center xl:mx-0 lg:-mx-17 z-10">
               {/* first  */}
-              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-[40.5rem] xxl:h-147 xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-[37.5rem] md:w-[25rem] md:h-[34rem] w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-1 lg:pt-24 md:pt-15 pt-24 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-[40.5rem] xxl:h-147  xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-[37.5rem] md:w-[25rem] md:h-[34rem] w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-1 lg:pt-24 md:pt-15 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
                   <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl md:text-4.5xl text-3xl">
@@ -393,7 +393,7 @@ export default function Home() {
             </div>
           )}
           {monthly && (
-            <div className="relative lg:flex lg:flex-row lg:justify-between lg:items-end flex flex-col items-center xl:mx-0 lg:-mx-17">
+            <div className="relative lg:flex lg:flex-row 1.5xl:justify-evenly lg:justify-between lg:items-end flex flex-col items-center xl:mx-0 lg:-mx-17">
               {/* first  */}
               <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-[40.5rem] xxl:h-147 xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-[37.5rem] md:w-[25rem] md:h-[34rem] w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-1 lg:pt-24 md:pt-15 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
@@ -470,8 +470,8 @@ export default function Home() {
             </div>
           )}
         </section>
-        <div className="bg-white 5xl:h-156 xxl:h-[25rem] xl:h-[20rem] lg:h-[18rem] md:h-[15rem] h-[10rem] relative">
-          <div className="absolute 5xl:w-[986px] 5xl:h-[579px] xxl:w-[900px] xxl:h-[500px] xl:w-[700px] xl:h-[420px] lg:w-[600px] lg:h-[360px] md:w-92 md:h-60 w-82 h-50 right-0 -bottom-4 md:-bottom-5 xl:-bottom-7 xxl:-bottom-9 5xl:-bottom-11">
+        <div className="bg-white 5xl:h-156 xxl:h-[25rem] 1.5xl:h-[34rem] xl:h-[20rem] lg:h-[18rem] md:h-[15rem] h-[10rem] relative">
+          <div className="absolute 5xl:w-[986px] 5xl:h-[579px] xxl:w-[900px] xxl:h-[500px] 1.5xl:w-[40rem] xl:w-[700px] xl:h-[420px] lg:w-[600px] lg:h-[360px] md:w-92 md:h-60 w-82 h-50 right-0 -bottom-4 1.5xl:-bottom-20 md:-bottom-5 xl:-bottom-7 xxl:-bottom-9 5xl:-bottom-11">
             <Image alt="vector" fill src="/asset/images/vector.svg" />
           </div>
         </div>
