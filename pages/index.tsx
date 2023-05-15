@@ -393,9 +393,9 @@ export default function Home() {
             </div>
           )}
           {monthly && (
-            <div className="relative lg:flex lg:flex-row 1.5xl:justify-evenly lg:justify-between lg:items-end flex flex-col items-center xl:mx-0 lg:-mx-17">
+            <div className="relative lg:flex lg:flex-row 1.5xl:justify-evenly lg:justify-between lg:items-end flex flex-col items-center xl:mx-0 lg:-mx-17 z-10">
               {/* first  */}
-              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-[40.5rem] xxl:h-147 xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-[37.5rem] md:w-[25rem] md:h-[34rem] w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-1 lg:pt-24 md:pt-15 pt-24 pb-14 flex flex-col justify-between items-center">
+              <div className="bg-black 5xl:w-134 xxl:w-100 5xl:h-[40.5rem] xxl:h-147  xl:w-[21.5rem] xl:h-156 lg:w-76 lg:h-[37.5rem] md:w-[25rem] md:h-[34rem] w-80 h-136 rounded-[2.125rem] 5xl:px-13 xxl:px-10 xl:px-8 lg:px-5 px-1 lg:pt-24 md:pt-15 pt-24 pb-14 flex flex-col justify-between items-center">
                 {/* texts */}
                 <div className="mb-10">
                   <p className="font-InterExtraBold 5xl:text-5.5xl xxl:text-4.5xl md:text-4.5xl text-3xl">
