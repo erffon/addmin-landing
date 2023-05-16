@@ -2,10 +2,10 @@
   @apply text-main-orange font-InterExtraBold 5xl:text-7.5xl xxl:text-[5rem] 1.5xl:text-7xl xl:text-6xl lg:text-5xl;
 }
 .tagline {
-  @apply font-InterExtraBold 5xl:text-7.5xl xxl:text-[5rem] 1.5xl:text-7xl xl:text-6xl lg:text-5xl md:text-7xl text-4xl 5xl:leading-10 xxl:leading-[6rem] xl:leading-[5rem] md:leading-[4.2rem] leading-10 lg:px-0 md:px-17 px-0 lg:text-left text-center;
+  @apply font-InterExtraBold 5xl:text-7.5xl xxl:text-[4.5rem] 1.5xl:text-7xl xl:text-6xl lg:text-5xl md:text-7xl text-4xl 5xl:leading-10 xxl:leading-[6rem] xl:leading-[5rem] md:leading-[4.2rem] leading-10 lg:px-0 md:px-17 px-0 lg:text-left text-center;
 }
 .hero-img {
-  @apply relative 5xl:w-[43rem] 5xl:h-[48rem] xxl:w-[46rem] xxl:h-[44rem] 1.5xl:w-[32rem] 1.5xl:h-[35rem] xl:w-[49.5rem] xl:h-[41rem] lg:w-[48.5rem] lg:h-134 md:w-136 md:h-156 w-84 h-90;
+  @apply relative 5xl:w-[43rem] 5xl:h-[48rem] xxl:w-[36rem] xxl:h-[38rem] 1.5xl:w-[32rem] 1.5xl:h-[35rem] xl:w-[49.5rem] xl:h-[41rem] lg:w-[48.5rem] lg:h-134 md:w-136 md:h-156 w-84 h-90;
 }
 .hero-cta {
   @apply font-InterExtraBold 5xl:text-3xl xxl:text-[1.65rem] xl:text-2xl lg:text-xl md:text-2xl text-xl bg-main-orange rounded-full 5xl:py-10 5xl:px-16 xxl:py-7 xxl:px-10 xl:px-8 xl:py-6 lg:px-8 lg:py-5 md:px-8 md:py-5 px-7 py-5 hover:scale-95 transition ease-out duration-300;
