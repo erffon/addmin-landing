@@ -44,13 +44,13 @@ const Footer = () => {
       <div className="md:flex md:flex-row flex-col flex md:gap-10 gap-3 text-center md:text-left xxl:text-2xl lg:text-xl md:text-base">
         <p className="font-InterBold">Copyright ©2023 addmin</p>
         <a
-          href=""
+          href="/policy"
           className="text-main-orange font-InterBold underline hover:scale-95 transition duration-300 ease-out"
         >
           Privacy
         </a>
         <a
-          href=""
+          href="/terms"
           className="text-main-orange font-InterBold underline hover:scale-95 transition duration-300 ease-out"
         >
           Terms

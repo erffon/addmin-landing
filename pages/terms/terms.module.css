@@ -1,0 +1,12 @@
+.container {
+  @apply 5xl:px-50 xxl:px-44 lg:px-22 1.5xl:px-52 md:px-15 px-5 py-20 font-InterRegular;
+}
+.container h3 {
+  @apply py-10 text-2xl font-InterBold;
+}
+.container h2 {
+  @apply py-10 text-4xl font-InterBold;
+}
+.container p {
+  @apply text-lg;
+}
